@@ -5,6 +5,10 @@ Author URI:   https://femrico.com/
 Version:      1.0
 */
 
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+
 // Base
 @import "assets/css/base/layout";
 @import "assets/css/base/base";
