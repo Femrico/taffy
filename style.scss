@@ -5,10 +5,42 @@ Author URI:   https://femrico.com/
 Version:      1.0
 */
 
+// Bootstrap Theme
+@import "assets/css/bootstrap/theme";
+
 // Bootstrap
-@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
-@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/media";
+
+@import "node_modules/bootstrap/scss/utilities";
+
+// Bootstrap Extension
+@import "assets/css/bootstrap/extend";
+
+// Fonts
+@import "assets/css/fontawesome/fontawesome.scss";
+@import "assets/css/fontawesome/fa-brands.scss";
+@import "assets/css/fontawesome/fa-light.scss";
+@import "assets/css/fontawesome/fa-regular.scss";
+@import "assets/css/fontawesome/fa-solid.scss";
 
 // Base
-@import "assets/css/base/layout";
 @import "assets/css/base/base";
+// @import "assets/css/base/layout";
+@import "assets/css/base/header";
+@import "assets/css/base/footer";
+
+// Components
+@import "assets/css/components/subscribe";
+@import "assets/css/components/social-buttons";
+@import "assets/css/components/search";
+@import "assets/css/components/main-carousel";

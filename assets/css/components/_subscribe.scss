@@ -1,0 +1,44 @@
+.subscribe form {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subscribe input {
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+}
+
+.subscribe .email,
+.subscribe .btn,
+.subscribe i {
+    padding: 10px 15px;
+}
+
+.subscribe .input-group-overlay {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe .email {
+    padding-left: 45px;
+    width: 100%;
+}
+
+.subscribe .btn {
+    border-radius: 0;
+}
+
+.subscribe p {
+    font-size: $font-size-sm;
+    color: $gray-500;
+}

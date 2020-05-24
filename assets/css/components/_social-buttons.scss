@@ -1,0 +1,46 @@
+.social .buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.btn-social {
+    background: $gray-700;
+    color: $white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: $spacer * 0.5;
+    margin-bottom: $spacer * 0.5;
+}
+
+.btn-social:hover {
+    background-color: $white;
+}
+
+.btn-social.facebook:hover {
+    color: #1877f2;
+}
+
+.btn-social.twitter:hover {
+    color: #1da1f2;
+}
+
+.btn-social.youtube:hover {
+    color: #ff0000;
+}
+
+.btn-social.instagram:hover {
+    color: #4c5fd7;
+}
+
+.btn-social.pinterest:hover {
+    color: #bd081c;
+}
+
+.btn-social.etsy:hover {
+    color: #eb6d20;
+}

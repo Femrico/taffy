@@ -11,10 +11,9 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
     <?php wp_body_open(); ?>
 
-    <header>Header</header>
-    
-    <main>
-        Main
+    <header>
+        <?php get_template_part('components/nav', 'topbar'); ?>
+        <?php get_template_part('components/nav', 'main'); ?>
+    </header>

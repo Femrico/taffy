@@ -1,0 +1,67 @@
+footer {
+    color: $white;
+    background-color: $gray-800;
+}
+
+footer .title {
+    margin-bottom: $spacer;
+}
+
+footer .col-md-4 > div {
+    margin-bottom: 2 * $spacer;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .footer-nav li {
+    margin-bottom: 5px;
+}
+
+footer .footer-nav a {
+    color: $gray-500;
+    font-size: $font-size-sm;
+}
+
+footer .footer-nav a:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background: $gray-900;
+    color: $white;
+}
+
+.footer-bottom i {
+    color: $primary;
+}
+
+.footer-bottom p {
+    color: $gray-500;
+    font-size: $font-size-sm;
+}
+
+.footer-bottom .logo {
+    max-width: 160px;
+}
+
+.footer-bottom .nav-link {
+    color: $gray-500;
+}
+
+.footer-bottom .nav-link:hover {
+    color: $white;
+}
+
+.payment-icons {
+    display: flex;
+}
+
+.payment-icons i {
+    font-size: 28px;
+    color: $gray-400;
+    margin-right: 0.5 * $spacer;
+}

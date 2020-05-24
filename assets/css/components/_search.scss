@@ -1,0 +1,25 @@
+.search form {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid $gray-500;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    padding: 10px 45px 10px 15px;
+    width: 100%;
+    font-size: $font-size-sm;
+}
+
+.search .btn {
+    position: absolute;
+    padding: 8px 15px;
+    right: 0;
+    top: 0;
+}

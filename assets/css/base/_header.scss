@@ -1,0 +1,31 @@
+// Navbar Brand
+// .navbar-brand {
+//     margin-right: 0;
+// }
+
+.navbar-brand .logo {
+    max-width: 130px;
+}
+
+.navbar-top .navbar-nav .nav-link {
+    padding: $spacer;
+    color: $gray-800;
+    font-weight: 500;
+}
+
+.navbar-top .navbar-nav .nav-link.active,
+.navbar-top .navbar-nav .nav-link:hover {
+    color: $primary;
+}
+
+// .navbar-toolbar {
+//     width: 25%;
+// }
+
+// .navbar-brand {
+//     width: 50%;
+// }
+
+// .navbar-brand {
+//     text-align: center;
+// }
