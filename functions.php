@@ -49,6 +49,10 @@ function disable_emojis_tinymce( $plugins ) {
  */
 function add_theme_assets() {
 
+	// Fonts
+	// wp_enqueue_style ('google-fonts', 'https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap' );
+	wp_enqueue_style ('google-fonts', 'https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap' );
+
     // Styles
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 
