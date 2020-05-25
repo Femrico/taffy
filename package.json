@@ -2,10 +2,10 @@
   "name": "taffy",
   "title": "taffy",
   "version": "1.0.0",
-  "homepage": "https://github.com/Femrico/taffy#readme",
+  "homepage": "https://femrico.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Femrico/taffy.git"
+    "url": "https://github.com/Femrico/taffy"
   },
   "license": "GPL-2.0+",
   "engines": {
@@ -14,5 +14,14 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@wordpress/babel-preset-default": "3.0.2",
+    "grunt": "^1.1.0",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.14.1"
   }
 }
