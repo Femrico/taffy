@@ -3,3 +3,13 @@ h6,
 .h6 {
     font-weight: normal;
 }
+
+.btn-cta {
+    box-shadow: 0 0.5rem 1.125rem -0.5rem $primary;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+}
+
+.btn-cta:hover {
+    box-shadow: none;
+}

@@ -27,6 +27,9 @@ Version:      1.0
 // Bootstrap Extension
 @import "assets/css/bootstrap/extend";
 
+// Splide slider
+@import "assets/css/spliede/main";
+
 // Fonts
 @import "assets/css/fontawesome/fontawesome.scss";
 @import "assets/css/fontawesome/fa-brands.scss";
@@ -39,6 +42,9 @@ Version:      1.0
 // @import "assets/css/base/layout";
 @import "assets/css/base/header";
 @import "assets/css/base/footer";
+
+// Shop
+@import "assets/css/shop/front-page";
 
 // Components
 @import "assets/css/components/subscribe";

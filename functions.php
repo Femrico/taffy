@@ -56,22 +56,8 @@ function add_theme_assets() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 
     // Scripts
+    wp_enqueue_script( 'splide', get_template_directory_uri() . '/assets/js/splide.js', array(), '5-22-2020', true );
     wp_enqueue_script( 'main', get_template_directory_uri() . '/main.js', array(), '5-22-2020', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_assets' );
-
-
-/**
- * Make script to be module
- */
-function add_type_attribute($tag, $handle, $src) {
-    // if not your script, do nothing and return original $tag
-    if ( 'main' !== $handle ) {
-        return $tag;
-    }
-    // change the script tag by adding type="module" and return it.
-    $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
-    return $tag;
-}
-add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);

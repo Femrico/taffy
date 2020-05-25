@@ -1,3 +1,38 @@
-.main-carousel {
-    
+.main-carousel img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-overlay {
+    margin-top: -10rem;
+    margin-bottom: 3 * $spacer;
+}
+
+.overlay-category-wrapper {
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: $spacer 20px;
+    grid-gap: 20px;
+    text-align: center;
+    font-size: $font-size-base;
+}
+
+.overlay-category-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: $spacer;
+}
+
+.overlay-category-wrapper a {
+    color: $body-color;
+}
+
+.overlay-category-wrapper a:hover {
+    color: $primary;
+    text-decoration: none;
 }
