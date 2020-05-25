@@ -4,6 +4,7 @@
 
 # Minified js
 *.min.js
+./main.js
 
 # Sass
 .sass-cache
