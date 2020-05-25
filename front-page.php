@@ -73,13 +73,114 @@ get_header();
                         With a 2-layer construction of qitech™ material, our impact cases are 6.6 ft. drop test
                         approved, no joke.
                     </p>
-                    <a href="#" class="btn btn-primary btn-cta">Shop iPhone 11 Pro Case</a>
+                    <a href="#" class="btn btn-primary btn-cta btn-lg">Shop iPhone 11 Pro Case</a>
                 </div>
             </div>
             <div class="col-md-6">
                 <video src="<?= get_template_directory_uri() ?> /assets/videos/intro.mp4" muted playsinline autoplay
                     loop></video>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container py-5">
+        <div class="text-center mb-4 pb-2">
+            <h2>Best Sellers</h2>
+        </div>
+        <div class="product-grid mb-5 pb-2">
+            <div class="card product-card">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <div class="card-body">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
+                    <div class="action-bar">
+                        <div class="price">
+                            $10<small>.99</small>
+                            <span class="strike">
+                                $12<small>.99</small>
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <div class="card-body">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
+                    <div class="action-bar">
+                        <div class="price">
+                            $10<small>.99</small>
+                            <span class="strike">
+                                $12<small>.99</small>
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <div class="card-body">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
+                    <div class="action-bar">
+                        <div class="price">
+                            $10<small>.99</small>
+                            <span class="strike">
+                                $12<small>.99</small>
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <div class="card-body">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
+                    <div class="action-bar">
+                        <div class="price">
+                            $10<small>.99</small>
+                            <span class="strike">
+                                $12<small>.99</small>
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn btn-primary btn-cta btn-lg">View More</a>
         </div>
     </div>
 </section>
