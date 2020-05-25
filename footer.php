@@ -126,6 +126,7 @@
             <div class="col-md-6">
                 <a href="/"><img src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" class="logo mb-4"
                         loading="lazy"></a>
+                <p class="mb-3">&copy; All right reserved. Made by Femrico.</p>
             </div>
             <div class="col-md-6">
                 <div class="navbar-expand mb-2">
@@ -144,7 +145,6 @@
                     <i class="fab fa-cc-discover"></i>
                     <i class="fab fa-cc-paypal"></i>
                 </div>
-                <p class="text-right">&copy; All right reserved. Made by Femrico.</p>
             </div>
         </div>
     </div>
