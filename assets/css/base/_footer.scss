@@ -1,6 +1,20 @@
 footer {
     color: $white;
     background-color: $gray-800;
+
+    .phone .media {
+        align-items: center;
+
+        a {
+            font-size: $font-size-base * 1.125;
+            font-weight: bold;
+
+            &:hover {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 footer .title {

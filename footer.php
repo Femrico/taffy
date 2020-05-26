@@ -77,6 +77,17 @@
                                 class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                <div class="phone">
+                    <h5 class="title">
+                        Phone Support
+                    </h5>
+                    <div class="media">
+                        <i class="fas fa-phone-alt fa-lg mr-2"></i>
+                        <a href="#">
+                            (832) 422-8080
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -86,7 +97,16 @@
         <div class="row pb-3">
             <div class="col-md-3 col-sm-6 mb-3">
                 <div class="media">
-                    <i class="far fa-rocket fa-3x pr-3"></i>
+                    <i class="fal fa-credit-card fa-3x pr-3"></i>
+                    <div class="media-body">
+                        <h6>Secure online payment</h6>
+                        <p>We possess SSL / Secure certificate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+                <div class="media">
+                    <i class="fal fa-shipping-fast fa-3x pr-3"></i>
                     <div class="media-body">
                         <h6>Fast &amp; free delivery</h6>
                         <p>Free delivery for all order over $200</p>
@@ -95,7 +115,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
                 <div class="media">
-                    <i class="far fa-usd-circle fa-3x pr-3"></i>
+                    <i class="fal fa-money-bill-wave fa-3x pr-3"></i>
                     <div class="media-body">
                         <h6>Money back guarantee</h6>
                         <p>We return money within 30 days</p>
@@ -104,19 +124,10 @@
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
                 <div class="media">
-                    <i class="far fa-headphones fa-3x pr-3"></i>
+                    <i class="fal fa-headset fa-3x pr-3"></i>
                     <div class="media-body">
                         <h6>24/7 customer support</h6>
                         <p>Friendly 24/7 customer support</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-3">
-                <div class="media">
-                    <i class="far fa-lock fa-3x pr-3"></i>
-                    <div class="media-body">
-                        <h6>Secure online payment</h6>
-                        <p>We possess SSL / Secure certificate</p>
                     </div>
                 </div>
             </div>

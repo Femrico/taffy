@@ -21,16 +21,16 @@ get_header();
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/cat-sm.jpg">
-                <h5>Women</h5>
+                <img src="<?= get_template_directory_uri() ?> /assets/images/samsung.jpg">
+                <h5>Samsung</h5>
             </a>
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/cat-sm.jpg">
-                <h5>Women</h5>
+                <img src="<?= get_template_directory_uri() ?> /assets/images/iphone.jpg">
+                <h5>iPhone</h5>
             </a>
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/cat-sm.jpg">
-                <h5>Women</h5>
+                <img src="<?= get_template_directory_uri() ?> /assets/images/Mask-Group-2.jpg">
+                <h5>Accessories</h5>
             </a>
         </div>
     </div>
@@ -44,16 +44,16 @@ get_header();
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
                         <h4>Converse All Star on Sale</h4>
-                        <a href="#" class="btn btn-primary btn-cta">Shop Now</a>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="category-block">
+                <div class="category-block vaporwave">
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
                         <h4>Converse All Star on Sale</h4>
-                        <a href="#" class="btn btn-primary btn-cta">Shop Now</a>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,9 @@ get_header();
         </div>
         <div class="product-grid mb-5 pb-2">
             <div class="card product-card">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <a href="#">
+                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                </a>
                 <div class="card-body">
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -113,7 +115,9 @@ get_header();
                 </div>
             </div>
             <div class="card product-card">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <a href="#">
+                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                </a>
                 <div class="card-body">
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -135,7 +139,9 @@ get_header();
                 </div>
             </div>
             <div class="card product-card">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <a href="#">
+                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                </a>
                 <div class="card-body">
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -157,7 +163,9 @@ get_header();
                 </div>
             </div>
             <div class="card product-card">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                <a href="#">
+                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
+                </a>
                 <div class="card-body">
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -180,7 +188,7 @@ get_header();
             </div>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-primary btn-cta btn-lg">View More</a>
+            <a href="#" class="btn btn-dark btn-lg">View More</a>
         </div>
     </div>
 </section>

@@ -1,107 +1,125 @@
 .category-block {
     background: $gray-100;
     border-radius: 7px;
-}
+    overflow: hidden;
 
-.category-block .text {
-    padding: $spacer * 3.5 $spacer * 2.5;
-}
+    h4 {
+        margin-bottom: $spacer * 1.5;
+    }
 
-.category-block .text .lead {
-    font-size: $font-size-base;
-    margin-bottom: $spacer * 0.5;
-}
+    .text {
+        padding: $spacer * 5 $spacer * 2.5 $spacer * 2;
+    }
 
-.category-block .text h4 {
-    margin-bottom: $spacer * 1.5;
+    .lead {
+        font-size: $font-size-base;
+        margin-bottom: $spacer * 0.5;
+    }
+
+    &.vaporwave {
+        background: url("/wp-content/themes/taffy/assets/images/vaporwave.jpg");
+        background-size: cover;
+        background-position: center;
+
+        .text {
+            background: linear-gradient(
+                60deg,
+                rgb(248, 249, 250),
+                rgba(248, 249, 250, 1) 20%,
+                rgba(248, 249, 250, 0.7) 50%,
+                rgba(0, 0, 0, 0) 85%,
+                rgba(128, 0, 108, 0)
+            );
+        }
+    }
 }
 
 .testimonial-slider {
     background: $gray-100;
     padding: $spacer * 3 $spacer * 2.5 $spacer * 2.5;
     border-radius: 7px;
+
+    .splide {
+        padding-bottom: $spacer * 2;
+    }
+
+    .splide__slide {
+        padding: $spacer * 0.75;
+        outline: none;
+    }
+
+    .slide-inner {
+        padding: $spacer * 1.25;
+        background: $white;
+        border-radius: 5px;
+    }
+
+    .review-by {
+        font-size: $font-size-md;
+        margin-bottom: $spacer * 0.25;
+        font-weight: bold;
+    }
+
+    .stars {
+        margin-bottom: $spacer;
+
+        i {
+            font-size: 14px;
+            color: $gray-500;
+        }
+
+        .fas {
+            color: #fea569;
+        }
+    }
+
+    .review {
+        color: $gray-800;
+        margin-bottom: $spacer;
+    }
+
+    .date {
+        font-size: $font-size-sm;
+        color: $gray-600;
+    }
 }
 
-.testimonial-slider .splide {
-    padding-bottom: $spacer * 2;
-}
-
-.testimonial-slider .splide__slide {
-    padding: $spacer * 0.75;
-    outline: none;
-}
-
-.testimonial-slider .slide-inner {
-    padding: $spacer * 1.25;
-    background: $white;
-    border-radius: 5px;
-}
-
-.testimonial-slider .review-by {
-    font-size: $font-size-md;
-    margin-bottom: $spacer * 0.25;
-    font-weight: bold;
-}
-
-.testimonial-slider .stars {
-    margin-bottom: $spacer;
-}
-
-.testimonial-slider .stars i {
-    font-size: 14px;
-    color: $gray-500;
-}
-
-.testimonial-slider .stars .fas {
-    color: #fea569;
-}
-
-.testimonial-slider .review {
-    color: $gray-800;
-    margin-bottom: $spacer;
-}
-
-.testimonial-slider .date {
-    font-size: $font-size-sm;
-    color: $gray-600;
-}
-
-.intro-video video {
-    max-width: 500px;
-}
-
-.intro-video .row {
-    align-items: center;
-}
-
-.intro-video .col-md-6 {
+.intro-video {
     text-align: center;
-}
 
-.intro-video .text {
-    padding: $spacer * 2;
-    max-width: 75%;
-    margin: 0 auto;
-}
+    .row {
+        align-items: center;
+    }
 
-.intro-video h2 {
-    margin-bottom: $spacer * 3;
-    position: relative;
-}
+    video {
+        max-width: 500px;
+    }
 
-.intro-video h2:after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 1px;
-    background: $gray-500;
-    bottom: $spacer * -1.5;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    .text {
+        padding: $spacer * 2;
+        max-width: 75%;
+        margin: 0 auto;
+    }
 
-.intro-video p {
-    margin-bottom: $spacer * 2;
+    h2 {
+        margin-bottom: $spacer * 3;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 1px;
+            background: $gray-500;
+            bottom: $spacer * -1.5;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    p {
+        margin-bottom: $spacer * 2;
+    }
 }
 
 .product-grid {
@@ -120,44 +138,44 @@
 
     .card-body {
         padding: $spacer $spacer $spacer * 1.5;
+    }
 
-        .title {
-            font-size: $font-size-md;
+    .title {
+        font-size: $font-size-md;
+        font-weight: 500;
+        color: $body-color;
+        display: inline-block;
+        margin-bottom: 0.5 * $spacer;
+    }
+
+    .stars {
+        margin-bottom: 0.25 * $spacer;
+
+        i {
+            font-size: 14px;
+            color: $gray-500;
+        }
+
+        .fas {
+            color: #fea569;
+        }
+    }
+
+    .action-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+
+        .price {
+            color: #4e54c8;
             font-weight: 500;
-            color: $body-color;
-            display: inline-block;
-            margin-bottom: 0.5 * $spacer;
         }
 
-        .stars {
-            margin-bottom: 0.25 * $spacer;
-
-            i {
-                font-size: 14px;
-                color: $gray-500;
-            }
-
-            .fas {
-                color: #fea569;
-            }
-        }
-
-        .action-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 18px;
-
-            .price {
-                color: #4e54c8;
-                font-weight: 500;
-
-                .strike {
-                    text-decoration: line-through;
-                    font-size: 16px;
-                    color: $gray-500;
-                }
-            }
+        .strike {
+            text-decoration: line-through;
+            font-size: 16px;
+            color: $gray-500;
         }
     }
 
