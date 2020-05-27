@@ -27,4 +27,31 @@
     .fas {
         color: #fea569;
     }
+
+    &.empty {
+        opacity: 0;
+    }
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+    border: 0;
+
+    li {
+        border: 0;
+        margin: $spacer * 0.15;
+
+        a {
+            background: $white;
+            padding: 0.375rem 0.75rem;
+            border-radius: 5px;
+            color: $body-color;
+        }
+
+        span.current {
+            background: $primary;
+            padding: 0.375rem 0.75rem;
+            border-radius: 5px;
+            color: $white;
+        }
+    }
 }

@@ -50,7 +50,7 @@ function taffy_update_rating_html($html, $rating, $count = 0) {
     $empty_stars = 5 - $complete_stars - $half_stars;
 
     $html = '';
-    $html .= '<div class="stars">';
+    $html .= sprintf('<div class="stars %s">', ($rating == 0) ? 'empty' : '');
 
     for ($i = 0; $i < $complete_stars; $i++) {
         $html .= '<i class="fas fa-star"></i>';
