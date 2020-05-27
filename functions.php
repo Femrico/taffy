@@ -61,3 +61,6 @@ function add_theme_assets() {
 
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_assets' );
+
+
+include('inc/woocommerce/content-product.php');

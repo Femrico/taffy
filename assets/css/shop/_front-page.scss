@@ -126,6 +126,7 @@
     display: grid;
     grid-gap: $spacer * 1.5;
     grid-template-columns: repeat(4, 1fr);
+    width: 100%;
 }
 
 .product-card {
@@ -148,35 +149,10 @@
         margin-bottom: 0.5 * $spacer;
     }
 
-    .stars {
-        margin-bottom: 0.25 * $spacer;
-
-        i {
-            font-size: 14px;
-            color: $gray-500;
-        }
-
-        .fas {
-            color: #fea569;
-        }
-    }
-
     .action-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 18px;
-
-        .price {
-            color: #4e54c8;
-            font-weight: 500;
-        }
-
-        .strike {
-            text-decoration: line-through;
-            font-size: 16px;
-            color: $gray-500;
-        }
     }
 
     .btn {

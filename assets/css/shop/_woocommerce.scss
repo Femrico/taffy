@@ -1,0 +1,30 @@
+.woocommerce a.button {
+    @extend .btn-primary, .btn-cta;
+}
+
+.price {
+    color: #4e54c8;
+    font-weight: 500;
+    font-size: 18px;
+
+    .strike {
+        text-decoration: line-through;
+        font-size: 16px;
+        color: $gray-500;
+        margin-left: $spacer * 0.4;
+    }
+}
+
+.stars {
+    margin-bottom: 0.25 * $spacer;
+
+    i {
+        font-size: 14px;
+        color: $gray-500;
+        margin-right: 4px;
+    }
+
+    .fas {
+        color: #fea569;
+    }
+}

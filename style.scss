@@ -40,12 +40,13 @@ Version:      1.0
 
 // Base
 @import "assets/css/base/base";
-// @import "assets/css/base/layout";
+@import "assets/css/base/layout";
 @import "assets/css/base/header";
 @import "assets/css/base/footer";
 
 // Shop
 @import "assets/css/shop/front-page";
+@import "assets/css/shop/woocommerce";
 
 // Components
 @import "assets/css/components/subscribe";
