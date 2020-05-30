@@ -19,6 +19,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<section class="mb-5">
-	<div class="container">
-		<div class="products product-grid">
+<div class="products product-grid">

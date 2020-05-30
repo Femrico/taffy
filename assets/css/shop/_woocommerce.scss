@@ -21,7 +21,7 @@
     i {
         font-size: 14px;
         color: $gray-500;
-        margin-right: 4px;
+        margin-right: 1px;
     }
 
     .fas {
@@ -38,20 +38,44 @@
 
     li {
         border: 0;
-        margin: $spacer * 0.15;
+        margin: 3px;
+
+        a,
+        span.current {
+            padding: 0.375rem 0.75rem;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        i {
+            font-size: $font-size-base;
+        }
 
         a {
             background: $white;
-            padding: 0.375rem 0.75rem;
-            border-radius: 5px;
             color: $body-color;
+
+            &:hover {
+                color: $body-color;
+            }
         }
 
         span.current {
             background: $primary;
-            padding: 0.375rem 0.75rem;
-            border-radius: 5px;
             color: $white;
         }
     }
+}
+
+.woocommerce-products-header {
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 1;
+    margin-bottom: $spacer * 2;
+    text-align: center;
+}
+
+.woocommerce .woocommerce-ordering {
+    float: none;
+    margin-bottom: $spacer * 2;
+    text-align: right;
 }

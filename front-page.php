@@ -53,7 +53,7 @@ get_header();
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
                         <h4>Converse All Star on Sale</h4>
-                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        <a href="/product-category/clothing" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<footer class="pt-5">
+<footer class="pt-5 mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
@@ -115,7 +115,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
                 <div class="media">
-                    <i class="fal fa-money-bill-wave fa-3x pr-3"></i>
+                    <i class="fal fa-award fa-3x pr-3"></i>
                     <div class="media-body">
                         <h6>Money back guarantee</h6>
                         <p>We return money within 30 days</p>
