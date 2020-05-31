@@ -35,21 +35,39 @@ $wrapper_classes   = apply_filters(
 		'images',
 	)
 );
+
+
 ?>
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<figure class="woocommerce-product-gallery__wrapper">
-		<?php
-		if ( $product->get_image_id() ) {
-			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
-		} else {
-			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-			$html .= '</div>';
-		}
+<div class="<?= esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>">
+	<div class="splide">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<!-- Main Image -->
+				<li class="splide__slide">
+					<?php
+					if ( $product->get_image_id() ) {
+						$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+					} else {
+						$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+						$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+						$html .= '</div>';
+					}
+					echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+					?>
+				</li>
 
-		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+				<!-- Gallery Images -->
+				<?php
+				$attachment_ids = $product->get_gallery_image_ids();
+				foreach ( $attachment_ids as $attachment_id ) {
 
-		do_action( 'woocommerce_product_thumbnails' );
-		?>
-	</figure>
+					$html = '<li class="splide__slide">';
+					$html .= wc_get_gallery_image_html( $attachment_id, true );
+					$html .= '</li>';
+					echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+				}
+				?>
+			</ul>
+		</div>
+	</div>
 </div>

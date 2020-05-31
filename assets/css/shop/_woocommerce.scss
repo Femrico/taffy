@@ -3,7 +3,7 @@
 }
 
 .price {
-    color: #4e54c8;
+    color: $primary;
     font-weight: 500;
     font-size: 18px;
 
@@ -12,6 +12,10 @@
         font-size: 16px;
         color: $gray-500;
         margin-left: $spacer * 0.4;
+    }
+
+    .shipping {
+        display: none;
     }
 }
 
@@ -78,4 +82,23 @@
     float: none;
     margin-bottom: $spacer * 2;
     text-align: right;
+}
+
+.related.products {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .heading {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: $spacer;
+
+        img {
+            height: auto;
+        }
+    }
 }

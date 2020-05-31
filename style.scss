@@ -28,7 +28,7 @@ Version:      1.0
 @import "assets/css/bootstrap/extend";
 
 // Splide slider
-@import "assets/css/spliede/main";
+@import "assets/css/splide/main";
 
 // Fonts
 @import "assets/css/fontawesome/fontawesome.scss";
@@ -47,6 +47,7 @@ Version:      1.0
 // Shop
 @import "assets/css/shop/front-page";
 @import "assets/css/shop/woocommerce";
+@import "assets/css/shop/single-product";
 
 // Components
 @import "assets/css/components/subscribe";

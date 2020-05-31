@@ -1,0 +1,110 @@
+.woocommerce.single-product .product-top {
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+    margin-bottom: $spacer * 3;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .woocommerce-breadcrumb {
+        padding: 0 $spacer;
+        margin-bottom: 2 * $spacer;
+        width: 100%;
+        max-width: 55%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        color: $gray-500;
+
+        a {
+            color: $gray-500;
+        }
+    }
+
+    .product-content .col-sm-1 {
+        padding-right: 5px;
+    }
+
+    .woocommerce-product-gallery,
+    .entry-summary {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    .gallery-thumbnails {
+        a {
+            display: inline-block;
+            border: 3px solid $gray-300;
+            margin-bottom: $spacer * 0.75;
+
+            &.active {
+                border-color: $gray-900;
+            }
+        }
+    }
+
+    .woocommerce-product-rating {
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        margin-bottom: $spacer * 3;
+
+        .stars {
+            margin-bottom: 2px;
+            margin-right: 10px;
+        }
+
+        .woocommerce-review-link {
+            font-size: $font-size-md;
+            color: $gray-500;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .product_title {
+        font-size: $h2-font-size;
+    }
+
+    .price {
+        color: $primary;
+        font-size: $font-size-base;
+        font-weight: bold;
+
+        .shipping,
+        .strike {
+            display: inline;
+            color: $gray-500;
+            font-size: $font-size-base;
+        }
+    }
+
+    .cart {
+        .quantity {
+            display: none;
+        }
+
+        .single_add_to_cart_button {
+            @extend .btn-primary, .btn-cta, .btn-lg;
+
+            text-transform: uppercase;
+            font-size: 18px;
+            padding: 10px 35px;
+        }
+    }
+
+    .related {
+        margin-top: $spacer * 5;
+    }
+}

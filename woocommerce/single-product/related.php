@@ -24,11 +24,11 @@ if ( $related_products ) : ?>
 	<section class="related products">
 		<div class="container">
 			<?php
-			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'You may also like', 'woocommerce' ) );
 			?>
 			<?php if (heading): ?>
-			<div class="text-center mb-4 pb-2">
-				<h2><?= esc_html( $heading ); ?></h2>
+			<div class="text-center mb-3">
+				<h4 class="heading"><?= esc_html( $heading ); ?></h4>
 			</div>
 			<?php endif; ?>
 
@@ -41,7 +41,7 @@ if ( $related_products ) : ?>
 
 						setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-						wc_get_template_part( 'content', 'product' );
+						wc_get_template_part( 'content', 'related-product' );
 						?>
 
 				<?php endforeach; ?>

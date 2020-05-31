@@ -5,14 +5,19 @@
 add_filter('woocommerce_format_sale_price', 'taffy_format_sale_price', 10, 3);
 function taffy_format_sale_price($price, $regular_price, $sale_price) {
     $price = ( is_numeric( $sale_price ) ? wc_price( $sale_price ) : $sale_price ) . '<span class="strike">' . ( is_numeric( $regular_price ) ? wc_price( $regular_price ) : $regular_price ) . '</span>';
-    return $price;
+    $shipping = "<span class='shipping'> - Free Shipping</span>";
+    if (is_product()) {
+        return $price . $shipping;
+    } else {
+        return $price;
+    }
 }
 
 add_filter('formatted_woocommerce_price', 'taffy_formatted_price', 10, 5);
 function taffy_formatted_price( $formatted_price, $price, $decimal_places, $decimal_separator, $thousand_separator ) {
 	$unit = number_format( intval( $price ), 0, $decimal_separator, $thousand_separator );
-	$decimal = sprintf( '%02d', ( $price - intval( $price ) ) * 100 );
-	return $unit . '<small>' . $decimal_separator . $decimal . '</small>';
+    $decimal = sprintf( '%02d', ( $price - intval( $price ) ) * 100 );
+    return $unit;
 }
 
 
@@ -44,4 +49,16 @@ function taffy_update_rating_html($html, $rating, $count = 0) {
     return $html;
 }
 
+/**
+ * Remove Breadcrumbs by default
+ */
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+/**
+ * Rename Breadcrumbs home to Femrico
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'taffy_update_breadcrumbs_home' );
+function taffy_update_breadcrumbs_home( $defaults ) {
+	$defaults['home'] = 'Femrico';
+	return $defaults;
+}
