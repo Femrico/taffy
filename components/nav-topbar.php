@@ -1,7 +1,9 @@
+<?php if ( is_store_notice_showing() ) { ?>
 <div class="topbar">
     <div class="container">
         <div class="topbar-text">
-            Free shipping for order over $200
+            <?php woocommerce_demo_store(); ?>
         </div>
     </div>
 </div>
+<?php } ?>

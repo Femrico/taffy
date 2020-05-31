@@ -74,6 +74,9 @@ if ( post_password_required() ) {
 						*/
 						do_action( 'woocommerce_single_product_summary' );
 						?>
+						<div class="secure-payment">
+							<img src="<?= get_template_directory_uri() ?> /assets/images/ssl-secure-icon.png">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -94,7 +97,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
-	<div class="product-description">
+	<div class="product-description pb-3 mb-5">
 		<div class="container">
 			<?php the_content(); ?>
 		</div>

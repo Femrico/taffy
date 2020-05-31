@@ -108,3 +108,67 @@
         margin-top: $spacer * 5;
     }
 }
+
+.woocommerce-noreviews {
+    background: $gray-100;
+    border-radius: 7px;
+    padding: $spacer;
+}
+
+.woocommerce #reviews #comments ol.commentlist {
+    padding-left: 0;
+
+    li {
+        background: $gray-100;
+        border-radius: 7px;
+        padding: $spacer;
+
+        .comment_container {
+            display: flex;
+            align-items: flex-start;
+
+            img.avatar {
+                position: relative;
+                margin-right: $spacer * 1.5;
+                width: 100%;
+                max-width: 65px;
+                border: 0;
+                padding: 0;
+                border-radius: 50%;
+            }
+
+            .comment-text {
+                float: none;
+                margin: 0;
+                width: 100%;
+                border: 0;
+                padding: 0;
+
+                p.meta {
+                    font-size: $font-size-sm;
+                    margin-bottom: $spacer * 0.5;
+                    display: flex;
+                    justify-content: space-between;
+                    text-transform: capitalize;
+
+                    .verified {
+                        font-size: 75%;
+                        color: $white;
+                        background-color: $primary;
+                        padding: 2px 7px;
+                        border-radius: 10px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .stars {
+                    margin-bottom: $spacer;
+                }
+            }
+        }
+    }
+}
+
+.secure-payment img {
+    max-width: 100px;
+}

@@ -102,3 +102,11 @@
         }
     }
 }
+
+.woocommerce-store-notice {
+    display: none !important;
+}
+
+.woocommerce-notices-wrapper {
+    @extend .container;
+}

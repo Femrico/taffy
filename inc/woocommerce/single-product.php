@@ -22,7 +22,7 @@ add_filter('woocommerce_product_tabs', 'taffy_remove_product_tabs', 98);
 function taffy_remove_product_tabs($tabs) {
     unset ($tabs['reviews']);                   // Remove reviews
     unset ($tabs['description']);               // Remove description
-    //unset ($tabs['additional_information']);    // Remove additional information
+    unset ($tabs['additional_information']);    // Remove additional information
 
     return $tabs;
 }

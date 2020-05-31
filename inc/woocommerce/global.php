@@ -49,10 +49,12 @@ function taffy_update_rating_html($html, $rating, $count = 0) {
     return $html;
 }
 
+
 /**
  * Remove Breadcrumbs by default
  */
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
 
 /**
  * Rename Breadcrumbs home to Femrico
@@ -61,4 +63,13 @@ add_filter( 'woocommerce_breadcrumb_defaults', 'taffy_update_breadcrumbs_home' )
 function taffy_update_breadcrumbs_home( $defaults ) {
 	$defaults['home'] = 'Femrico';
 	return $defaults;
+}
+
+
+/**
+ * Update Store Notice
+ */
+add_filter('woocommerce_demo_store', 'taffy_update_store_notice', 2, 100);
+function taffy_update_store_notice($html, $notice) {
+    return strip_tags($notice);
 }
