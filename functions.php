@@ -68,3 +68,4 @@ include('inc/woocommerce/global.php');
 include('inc/woocommerce/archive-product.php');
 include('inc/woocommerce/content-product.php');
 include('inc/woocommerce/single-product.php');
+include('inc/woocommerce/checkout.php');

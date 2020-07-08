@@ -1,0 +1,26 @@
+.woocommerce {
+    table.cart {
+        .product-thumbnail {
+            width: 130px;
+
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        td.actions .coupon .input-text {
+            width: auto;
+        }
+    }
+
+    .cart-collaterals {
+        .checkout-button.button {
+            @extend .btn-primary;
+        }
+    }
+
+    a.remove {
+        color: $gray-300 !important;
+    }
+}

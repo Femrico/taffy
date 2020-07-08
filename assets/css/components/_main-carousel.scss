@@ -36,3 +36,36 @@
     color: $primary;
     text-decoration: none;
 }
+
+@include media-breakpoint-down(md) {
+    .main-carousel img {
+        height: 80vh;
+        max-height: unset;
+    }
+
+    .carousel-overlay {
+        margin-top: $spacer * -5;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .carousel-overlay {
+        margin-top: $spacer * 2;
+    }
+
+    .overlay-category-wrapper {
+        grid-template-columns: 1fr 1fr;
+        background-color: $gray-100;
+
+        a:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        img {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

@@ -19,6 +19,25 @@
     color: $primary;
 }
 
+.navbar-toolbar .cart {
+    @extend .btn;
+
+    display: inline-flex;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: none;
+    border-radius: 50%;
+    background-color: #dd6868;
+
+    &:hover i {
+        color: #fff;
+    }
+}
+
 // .navbar-toolbar {
 //     width: 25%;
 // }
@@ -30,3 +49,9 @@
 // .navbar-brand {
 //     text-align: center;
 // }
+
+@include media-breakpoint-down(md) {
+    nav {
+        display: none;
+    }
+}

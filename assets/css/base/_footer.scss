@@ -80,3 +80,40 @@ footer .footer-nav a:hover {
     color: $gray-400;
     margin-right: 0.5 * $spacer;
 }
+
+@include media-breakpoint-down(xs) {
+    footer {
+        text-align: center;
+        
+        .social .buttons {
+            justify-content: center;
+        }
+    
+        .phone .media {
+            justify-content: center;
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+
+        .row:nth-child(1) {
+            .media {
+                justify-content: center;
+            }
+
+            .media-body {
+                flex: unset;
+            }
+        } 
+
+        .navbar-nav {
+            justify-content: center !important;
+        }
+
+        .payment-icons {
+            justify-content: center !important;
+        }
+    }
+
+}

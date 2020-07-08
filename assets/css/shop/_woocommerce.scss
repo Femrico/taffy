@@ -1,5 +1,5 @@
 .woocommerce a.button {
-    @extend .btn-primary, .btn-cta;
+    @extend .btn-primary;
 }
 
 .price {
@@ -109,4 +109,42 @@
 
 .woocommerce-notices-wrapper {
     @extend .container;
+}
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    color: $white;
+    margin-bottom: $spacer;
+    margin-top: $spacer;
+    border: 0;
+
+    a.button {
+        order: 2;
+        background-color: $light;
+        box-shadow: none;
+        color: $body-color;
+    }
+
+    &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        color: $white;
+    }
+}
+
+.woocommerce-message {
+    background-color: $success;
+}
+
+.woocommerce-info {
+    background-color: $info;
+}
+
+.woocommerce-error {
+    background-color: $danger;
 }

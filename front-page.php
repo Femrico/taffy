@@ -21,12 +21,12 @@ get_header();
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/samsung.jpg">
-                <h5>Samsung</h5>
-            </a>
-            <a href="#">
                 <img src="<?= get_template_directory_uri() ?> /assets/images/iphone.jpg">
                 <h5>iPhone</h5>
+            </a>
+            <a href="#">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/samsung.jpg">
+                <h5>Samsung</h5>
             </a>
             <a href="#">
                 <img src="<?= get_template_directory_uri() ?> /assets/images/Mask-Group-2.jpg">
@@ -39,7 +39,7 @@ get_header();
 <section class="mb-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="category-block">
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
@@ -48,7 +48,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div class="category-block vaporwave">
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
@@ -77,8 +77,7 @@ get_header();
                 </div>
             </div>
             <div class="col-md-6">
-                <video src="<?= get_template_directory_uri() ?> /assets/videos/intro.mp4" muted playsinline autoplay
-                    loop></video>
+                <video src="<?= get_template_directory_uri() ?> /assets/videos/intro.mp4" muted playsinline autoplay loop></video>
             </div>
         </div>
     </div>

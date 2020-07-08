@@ -44,7 +44,6 @@ if ( ! is_ajax() ) {
 			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Update totals', 'woocommerce' ); ?></button>
 		</noscript>
 
-		<?php wc_get_template( 'checkout/terms.php' ); ?>
 
 		<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
@@ -53,6 +52,8 @@ if ( ! is_ajax() ) {
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
 		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
+		
+		<?php wc_get_template( 'checkout/terms.php' ); ?>
 	</div>
 </div>
 <?php

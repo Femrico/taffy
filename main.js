@@ -1,20 +1,32 @@
-var testimonialSlider = document.querySelector('.testimonial-slider .splide');
+window.addEventListener('load', function () {
+  var testimonialSlider = document.querySelector('.testimonial-slider .splide');
 
-if (testimonialSlider) {
-  new Splide(testimonialSlider, {
-    type: 'loop',
-    perPage: 3,
-    rewind: true,
-    arrows: false,
-    autoplay: false,
-    pauseOnHover: true,
-    drag: true,
-    flickMaxPage: 4,
-    flickPower: 500,
-    flickVelocityThreshold: 0.5
-  }).mount();
-}
+  if (window.innerWidth >= 992) {
+    var perPage = 3;
+    console.log(1);
+  } else if (window.innerWidth >= 576) {
+    var perPage = 2;
+    console.log(2);
+  } else {
+    var perPage = 1;
+    console.log(3);
+  }
 
+  if (testimonialSlider) {
+    new Splide(testimonialSlider, {
+      type: 'loop',
+      perPage: perPage,
+      rewind: true,
+      arrows: false,
+      autoplay: false,
+      pauseOnHover: true,
+      drag: true,
+      flickMaxPage: 4,
+      flickPower: 500,
+      flickVelocityThreshold: 0.5
+    }).mount();
+  }
+});
 var productGallery = document.querySelector('.woocommerce-product-gallery .splide');
 
 if (productGallery) {
@@ -31,14 +43,9 @@ if (productGallery) {
     flickPower: 500,
     flickVelocityThreshold: 0.5
   }).mount();
-}
-
-var galleryThumbnails = document.querySelectorAll('.gallery-thumbnails a');
-
-for (i = 0; i < galleryThumbnails.length; i++) {
-  galleryThumbnails[i].addEventListener('click', function (e) {
+  var galleryThumbnails = document.querySelectorAll('.gallery-thumbnails a');
+  singleProductSlider.on('move', function (newIndex, oldIndex, destIndex) {
     document.querySelector('.gallery-thumbnails a.active').classList.remove('active');
-    var el = e.currentTarget;
-    el.classList.add('active');
+    galleryThumbnails[destIndex].classList.add('active');
   });
 }
