@@ -81,14 +81,30 @@ footer .footer-nav a:hover {
     margin-right: 0.5 * $spacer;
 }
 
+@include media-breakpoint-down(sm) {
+    .footer-bottom {
+        text-align: center;
+
+        .navbar-nav {
+            justify-content: center !important;
+            flex-wrap: wrap;
+        }
+
+        .payment-icons {
+            justify-content: center !important;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 @include media-breakpoint-down(xs) {
     footer {
         text-align: center;
-        
+
         .social .buttons {
             justify-content: center;
         }
-    
+
         .phone .media {
             justify-content: center;
         }
@@ -105,7 +121,7 @@ footer .footer-nav a:hover {
             .media-body {
                 flex: unset;
             }
-        } 
+        }
 
         .navbar-nav {
             justify-content: center !important;
@@ -115,5 +131,4 @@ footer .footer-nav a:hover {
             justify-content: center !important;
         }
     }
-
 }

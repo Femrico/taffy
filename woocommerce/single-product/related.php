@@ -32,8 +32,8 @@ if ( $related_products ) : ?>
 			</div>
 			<?php endif; ?>
 
+			<div class="related-products-wrapper">
 			<?php woocommerce_product_loop_start(); ?>
-
 				<?php foreach ( $related_products as $related_product ) : ?>
 
 						<?php
@@ -45,8 +45,8 @@ if ( $related_products ) : ?>
 						?>
 
 				<?php endforeach; ?>
-
 			<?php woocommerce_product_loop_end(); ?>
+			</div>
 		</div>
 	</section>
 	<?php

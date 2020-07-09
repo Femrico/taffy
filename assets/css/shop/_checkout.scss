@@ -171,3 +171,13 @@ form.checkout {
         margin-bottom: $spacer * 1.5;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    form.checkout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "warning"
+                            "summary"
+                            "billing"
+                            "payment";
+    }
+}

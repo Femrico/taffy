@@ -23,4 +23,16 @@
     a.remove {
         color: $gray-300 !important;
     }
+
+    .cart_totals {
+        h2, table {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .woocommerce table.cart td.actions .coupon .input-text {
+        width: 48%;
+    }
 }

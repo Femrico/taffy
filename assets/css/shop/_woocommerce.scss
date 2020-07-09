@@ -148,3 +148,9 @@
 .woocommerce-error {
     background-color: $danger;
 }
+
+@include media-breakpoint-down(xs) {
+    .woocommerce-notices-wrapper {
+        font-size: 0.75rem;
+    }
+}

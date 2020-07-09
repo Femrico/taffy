@@ -35,7 +35,7 @@ if (productGallery) {
     perPage: 1,
     rewind: true,
     arrows: false,
-    pagination: false,
+    pagination: true,
     autoplay: false,
     pauseOnHover: true,
     drag: true,

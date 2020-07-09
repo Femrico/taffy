@@ -63,18 +63,12 @@
                         Follow Us
                     </h5>
                     <div class="buttons">
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social facebook"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social twitter"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social instagram"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social pinterest"><i
-                                class="fab fa-pinterest-p"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social etsy"><i
-                                class="fab fa-etsy"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social youtube"><i
-                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social etsy"><i class="fab fa-etsy"></i></a>
+                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social youtube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="phone">
@@ -135,8 +129,7 @@
         <hr class="hr-light m-0 pb-4 mb-3" />
         <div class="row">
             <div class="col-md-6">
-                <a href="/"><img src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" class="logo mb-4"
-                        loading="lazy"></a>
+                <a href="/"><img src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" class="logo mb-4" loading="lazy"></a>
                 <p class="mb-3">&copy; All right reserved. Made by Femrico.</p>
             </div>
             <div class="col-md-6">
