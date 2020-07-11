@@ -22,7 +22,7 @@ get_header();
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="#">
                 <img src="<?= get_template_directory_uri() ?> /assets/images/iphone.jpg">
-                <h5>iPhone</h5>
+                <h5>iPhone Cases</h5>
             </a>
             <a href="#">
                 <img src="<?= get_template_directory_uri() ?> /assets/images/samsung.jpg">
