@@ -23,7 +23,7 @@
                     </ul>
                 </div>
                 <div class="navbar-toolbar text-right">
-                    <a class="toolbar-icon cart" href="/cart/">
+                    <a class="toolbar-icon cart" href="<?= get_permalink(wc_get_page_id('cart')) ?>">
                         <i class="far fa-shopping-cart"></i>
                     </a>
                 </div>

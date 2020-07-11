@@ -123,11 +123,21 @@
     margin-top: $spacer;
     border: 0;
 
-    a.button {
+    a.button,
+    a.restore-item {
         order: 2;
         background-color: $light;
         box-shadow: none;
         color: $body-color;
+        padding: $spacer * 0.5 $spacer;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+            background: $primary;
+            color: $white;
+            text-decoration: none;
+        }
     }
 
     &:before {

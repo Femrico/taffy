@@ -5,14 +5,11 @@ get_header();
 <section class="main-carousel">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <a class="carousel-item active" href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/slide-1.jpg">
+            <a class="carousel-item active" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/banner.jpg">
             </a>
-            <a class="carousel-item" href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/slide-1.jpg">
-            </a>
-            <a class="carousel-item" href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/slide-1.jpg">
+            <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
+                <img src="<?= get_template_directory_uri() ?> /assets/images/banner.jpg">
             </a>
         </div>
 </section>
@@ -26,7 +23,7 @@ get_header();
             </a>
             <a href="#">
                 <img src="<?= get_template_directory_uri() ?> /assets/images/samsung.jpg">
-                <h5>Samsung</h5>
+                <h5>Samsung Cases</h5>
             </a>
             <a href="#">
                 <img src="<?= get_template_directory_uri() ?> /assets/images/Mask-Group-2.jpg">
@@ -67,13 +64,12 @@ get_header();
             <div class="col-md-6">
                 <div class="text">
                     <h2>
-                        World's Slimmest, Most Protective Phone Case
+                        Slimmest, Most Protective Phone Case
                     </h2>
                     <p>
-                        With a 2-layer construction of qitech™ material, our impact cases are 6.6 ft. drop test
-                        approved, no joke.
+                        With multi-layer construction of acrylic material, our cases are 6 ft drop test approved, no joke.
                     </p>
-                    <a href="#" class="btn btn-primary btn-cta btn-lg">Shop iPhone 11 Pro Case</a>
+                    <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary btn-cta btn-lg">Shop iPhone 11 Pro Case</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -89,105 +85,28 @@ get_header();
             <h2>Best Sellers</h2>
         </div>
         <div class="product-grid mb-5 pb-2">
-            <div class="card product-card">
-                <a href="#">
-                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
-                </a>
-                <div class="card-body">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
-                    <div class="action-bar">
-                        <div class="price">
-                            $10<small>.99</small>
-                            <span class="strike">
-                                $12<small>.99</small>
-                            </span>
-                        </div>
-                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card product-card">
-                <a href="#">
-                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
-                </a>
-                <div class="card-body">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
-                    <div class="action-bar">
-                        <div class="price">
-                            $10<small>.99</small>
-                            <span class="strike">
-                                $12<small>.99</small>
-                            </span>
-                        </div>
-                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card product-card">
-                <a href="#">
-                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
-                </a>
-                <div class="card-body">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
-                    <div class="action-bar">
-                        <div class="price">
-                            $10<small>.99</small>
-                            <span class="strike">
-                                $12<small>.99</small>
-                            </span>
-                        </div>
-                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card product-card">
-                <a href="#">
-                    <img src="<?= get_template_directory_uri() ?> /assets/images/product.png">
-                </a>
-                <div class="card-body">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="title">Coconut, Indonesia (piece)</a>
-                    <div class="action-bar">
-                        <div class="price">
-                            $10<small>.99</small>
-                            <span class="strike">
-                                $12<small>.99</small>
-                            </span>
-                        </div>
-                        <a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $query = new WP_Query(array(
+                'post_type' => 'product',
+                'post_status' => 'publish',
+                'posts_per_page' => 4,
+                'tax_query' => array(array(
+                    'taxonomy' => 'product_visibility',
+                    'field'    => 'term_id',
+                    'terms'    => 'featured',
+                    'operator' => 'IN',
+                ))
+            ));
+
+            while ($query->have_posts()) {
+                $query->the_post();
+                do_action('woocommerce_shop_loop');
+                wc_get_template_part('content', 'product');
+            }
+            ?>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-dark btn-lg">View More</a>
+            <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-dark btn-lg">View More</a>
         </div>
     </div>
 </section>

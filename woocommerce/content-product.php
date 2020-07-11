@@ -74,13 +74,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 				 */
 				do_action( 'woocommerce_after_shop_loop_item_title' );
 			?>
-			<!-- <div class="price">
-				$10<small>.99</small>
-				<span class="strike">
-					$12<small>.99</small>
-				</span>
-			</div>
-			<a href="#" class="btn btn-primary btn-cta">+ <i class="far fa-shopping-cart"></i></a> -->
 		</div>
 	</div>
 	
