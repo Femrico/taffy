@@ -63,12 +63,12 @@
                         Follow Us
                     </h5>
                     <div class="buttons">
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/thefemrico/" target="_blank" rel="nofollow" class="btn btn-social facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" target="_blank" rel="nofollow" class="btn btn-social twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social etsy"><i class="fab fa-etsy"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/femrico/" target="_blank" rel="nofollow" class="btn btn-social instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/femrico/boards/" target="_blank" rel="nofollow" class="btn btn-social pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://www.etsy.com/shop/femrico/" target="_blank" rel="nofollow" class="btn btn-social etsy"><i class="fab fa-etsy"></i></a>
+                        <!-- <a href="#" target="_blank" rel="nofollow" class="btn btn-social youtube"><i class="fab fa-youtube"></i></a> -->
                     </div>
                 </div>
                 <div class="phone">
@@ -77,9 +77,10 @@
                     </h5>
                     <div class="media">
                         <i class="fas fa-phone-alt fa-lg mr-2"></i>
-                        <a href="#">
-                            (832) 422-8080
-                        </a>
+                        <script>
+                            var enc = window.atob("KzEgKDgzMikgNDIyIDgwODA=");
+                            document.write("<a href='tel:" + enc + "'>" + enc + "</a>")
+                        </script>
                     </div>
                 </div>
             </div>
@@ -89,7 +90,7 @@
 <div class="footer-bottom pt-5 pb-3">
     <div class="container">
         <div class="row pb-3">
-            <div class="col-md-3 col-sm-6 mb-3">
+            <div class="col-md-4 col-sm-6 mb-3">
                 <div class="media">
                     <i class="fal fa-credit-card fa-3x pr-3"></i>
                     <div class="media-body">
@@ -98,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 mb-3">
+            <!-- <div class="col-md-3 col-sm-6 mb-3">
                 <div class="media">
                     <i class="fal fa-shipping-fast fa-3x pr-3"></i>
                     <div class="media-body">
@@ -106,8 +107,8 @@
                         <p>Free delivery for all order over $200</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-3">
+            </div> -->
+            <div class="col-md-4 col-sm-6 mb-3">
                 <div class="media">
                     <i class="fal fa-award fa-3x pr-3"></i>
                     <div class="media-body">
@@ -116,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 mb-3">
+            <div class="col-md-4 col-sm-6 mb-3">
                 <div class="media">
                     <i class="fal fa-headset fa-3x pr-3"></i>
                     <div class="media-body">
@@ -130,16 +131,21 @@
         <div class="row">
             <div class="col-md-6">
                 <a href="/"><img src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" class="logo mb-4" loading="lazy"></a>
-                <p class="mb-3">&copy; All right reserved. Made by Femrico.</p>
+                <p class="mb-3">&copy; All right reserved. Made with <i class="fas fa-heart"></i> by Femrico.</p>
             </div>
             <div class="col-md-6">
                 <div class="navbar-expand mb-2">
                     <ul class="navbar-nav justify-content-end">
-                        <li class="nav-item"><a href="#" class="nav-link">Outlets</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Affiliates</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Terms of use</a></li>
+                        <?php
+                        $main_menu = wp_get_nav_menu_items('footer-menu');
+                        foreach ($main_menu as $item) {
+                        ?>
+                            <li class="nav-item <?= implode(" ", $item->classes) ?>">
+                                <a href="<?= $item->url ?>" class="nav-link"><?= $item->title ?></a>
+                            </li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </div>
                 <div class="payment-icons justify-content-end mb-3 pb-2">

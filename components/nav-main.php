@@ -8,24 +8,22 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse mx-4">
+                <div class="collapse navbar-collapse mx-lg-4" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Shop</a>
-                        </li>
+                        <?php
+                        $main_menu = wp_get_nav_menu_items('main-menu');
+                        foreach ($main_menu as $item) {
+                        ?>
+                            <li class="nav-item <?= implode(" ", $item->classes) ?>">
+                                <a href="<?= $item->url ?>" class="nav-link"><?= $item->title ?></a>
+                            </li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </div>
                 <div class="navbar-toolbar text-right">
-                    <a class="toolbar-icon cart" href="#">
+                    <a class="toolbar-icon cart" href="/cart/">
                         <i class="far fa-shopping-cart"></i>
                     </a>
                 </div>

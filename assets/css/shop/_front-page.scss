@@ -84,6 +84,12 @@
     }
 }
 
+@include media-breakpoint-down(sm) {
+    .testimonial-slider {
+        padding: $spacer * 3 0 $spacer * 2.5;
+    }
+}
+
 .intro-video {
     text-align: center;
 
@@ -138,7 +144,8 @@
 }
 
 @include media-breakpoint-down(sm) {
-    .testimonial-slider {
-        padding: $spacer * 3 0 $spacer * 2.5;
+    .intro-video {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

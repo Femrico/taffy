@@ -16,18 +16,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-		babel: {
-			options: {
-				presets: ['@wordpress/babel-preset-default']
-			},
-			dist: {
-				files: {
-					'main.js': 'assets/js/main.js'
-				}
-			}
-		},
-
-
 		// Watch changes for assets.
 		watch: {
 			css: {
@@ -39,20 +27,10 @@ module.exports = function (grunt) {
 					'sass'
 				]
 			},
-			js: {
-				files: [
-					// main js
-					'assets/js/*.js',
-				],
-				tasks: [
-					'babel'
-				]
-			}
 		},
 
 	});
 
 	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-babel');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 }
