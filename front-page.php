@@ -17,15 +17,15 @@ get_header();
 <section class="carousel-overlay">
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
-            <a href="#">
+            <a href="/iphone-cases/">
                 <img src="/wp-content/uploads/2020/07/iphone.jpg">
                 <h5>iPhone Cases</h5>
             </a>
-            <a href="#">
+            <a href="/samsung-cases/">
                 <img src="/wp-content/uploads/2020/07/samsung.jpg">
                 <h5>Samsung Cases</h5>
             </a>
-            <a href="#">
+            <a href="/accessories/">
                 <img src="/wp-content/uploads/2020/07/Mask-Group-2.jpg">
                 <h5>Accessories</h5>
             </a>
@@ -49,8 +49,8 @@ get_header();
                 <div class="category-block vaporwave">
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
-                        <h4>Converse All Star on Sale</h4>
-                        <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary">Shop Now</a>
+                        <h4>Vaporwave Themed Cases</h4>
+                        <a href="/iphone-cases/" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ get_header();
                     <p>
                         With multi-layer construction of acrylic material, our cases are 6 ft drop test approved, no joke.
                     </p>
-                    <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary btn-cta btn-lg">Shop iPhone 11 Pro Case</a>
+                    <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary btn-cta btn-lg">Shop iPhone Cases</a>
                 </div>
             </div>
             <div class="col-md-6">
