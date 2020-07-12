@@ -71,7 +71,6 @@
         display: flex;
         line-height: 1;
         align-items: center;
-        margin-bottom: $spacer * 3;
 
         .stars {
             margin-bottom: 2px;
@@ -86,6 +85,10 @@
                 text-decoration: none;
             }
         }
+    }
+
+    form {
+        margin-top: $spacer * 3;
     }
 
     .product_title {
