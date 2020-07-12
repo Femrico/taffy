@@ -73,7 +73,7 @@ get_header();
                 </div>
             </div>
             <div class="col-md-6">
-                <video src="<?= get_template_directory_uri() ?> /assets/videos/intro.mp4" muted playsinline autoplay loop></video>
+                <video src="<?= get_template_directory_uri() ?>/assets/videos/intro.mp4" muted playsinline autoplay loop></video>
             </div>
         </div>
     </div>

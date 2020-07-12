@@ -51,9 +51,9 @@ if (productGallery) {
 
 window.addEventListener('load', function () {
 	var variations = document.querySelectorAll('.variations select');
-	var defaultHTML = document.querySelector(".entry-summary .price").innerHTML;
-
 	if (variations.length > 0) {
+		var defaultHTML = document.querySelector(".entry-summary .price").innerHTML;
+
 		for (var i = 0; i < variations.length; i++) {
 			variations[i].addEventListener('change', function () {
 
