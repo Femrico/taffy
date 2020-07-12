@@ -6,10 +6,10 @@ get_header();
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <a class="carousel-item active" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/banner.jpg">
+                <img src="/wp-content/uploads/2020/07/banner.jpg">
             </a>
             <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/banner.jpg">
+                <img src="/wp-content/uploads/2020/07/banner.jpg">
             </a>
         </div>
 </section>
@@ -18,15 +18,15 @@ get_header();
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/iphone.jpg">
+                <img src="/wp-content/uploads/2020/07/iphone.jpg">
                 <h5>iPhone Cases</h5>
             </a>
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/samsung.jpg">
+                <img src="/wp-content/uploads/2020/07/samsung.jpg">
                 <h5>Samsung Cases</h5>
             </a>
             <a href="#">
-                <img src="<?= get_template_directory_uri() ?> /assets/images/Mask-Group-2.jpg">
+                <img src="/wp-content/uploads/2020/07/Mask-Group-2.jpg">
                 <h5>Accessories</h5>
             </a>
         </div>
@@ -40,8 +40,8 @@ get_header();
                 <div class="category-block">
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
-                        <h4>Converse All Star on Sale</h4>
-                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        <h4>Take advantage of Free Shipping</h4>
+                        <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ get_header();
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
                         <h4>Converse All Star on Sale</h4>
-                        <a href="/product-category/clothing" class="btn btn-primary">Shop Now</a>
+                        <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>

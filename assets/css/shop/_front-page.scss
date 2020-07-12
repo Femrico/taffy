@@ -2,6 +2,7 @@
     background: $gray-100;
     border-radius: 7px;
     overflow: hidden;
+    height: 100%;
 
     h4 {
         margin-bottom: $spacer * 1.5;
@@ -9,6 +10,7 @@
 
     .text {
         padding: $spacer * 5 $spacer * 2.5 $spacer * 2;
+        height: 100%;
     }
 
     .lead {
