@@ -3,6 +3,17 @@
     padding-bottom: $spacer * 2;
     margin-bottom: $spacer * 3;
 
+    div.woocommerce-variation-price,
+    div.woocommerce-variation-availability,
+    div.hidden-variable-price {
+        height: 0px !important;
+        overflow: hidden;
+        position: relative;
+        line-height: 0px !important;
+        font-size: 0% !important;
+        visibility: hidden !important;
+    }
+
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -94,9 +105,36 @@
         }
     }
 
+    table.variations {
+        tr,
+        td {
+            display: block;
+            line-height: 1.5 !important;
+        }
+
+        tr {
+            margin-bottom: $spacer;
+        }
+
+        label {
+            line-height: 1;
+            font-weight: normal !important;
+            margin-bottom: 0;
+        }
+
+        .reset_variations {
+            display: none !important;
+        }
+
+        select {
+            padding: 5px 21px 5px 13px;
+            border-radius: 0;
+        }
+    }
+
     .cart {
         .quantity {
-            display: none;
+            display: none !important;
         }
 
         .single_add_to_cart_button {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Loop Add to Cart
  *
@@ -15,7 +16,7 @@
  * @version     3.3.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
@@ -24,12 +25,12 @@ global $product;
 echo apply_filters(
 	'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
 	sprintf(
-		'<a href="/cart/?add-to-cart=%s" data-quantity="%s" class="btn btn-primary btn-cta %s" %s>%s</a>',
-		$product->id,
-		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
-		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
-		isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
-		'+ <i class="far fa-shopping-cart"></i>'
+		'<a href="%s" data-quantity="%s" class="btn btn-primary btn-cta %s" %s>%s</a>',
+		(!$product->is_type('simple')) ? esc_attr($product->get_permalink()) : '?add-to-cart=' . $product->id,
+		esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
+		esc_attr(isset($args['class']) ? $args['class'] : 'button'),
+		isset($args['attributes']) ? wc_implode_html_attributes($args['attributes']) : '',
+		(!$product->is_type('simple')) ? '<i class="far fa-eye"></i>' : '+ <i class="far fa-shopping-cart"></i>'
 	),
 	$product,
 	$args
