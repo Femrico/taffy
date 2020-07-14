@@ -6,11 +6,13 @@ get_header();
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <a class="carousel-item active" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="https://femrico.com/wp-content/uploads/2020/07/banner.jpg" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-2.jpg" class="d-none d-md-block" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-md.jpg" class="d-none d-sm-block d-md-none" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-sm.jpg" class="d-block d-sm-none" loading="lazy">
             </a>
-            <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
+            <!-- <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
                 <img src="https://femrico.com/wp-content/uploads/2020/07/banner.jpg" loading="lazy">
-            </a>
+            </a> -->
         </div>
 </section>
 
