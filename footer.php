@@ -7,31 +7,34 @@
                         Shop Departments
                     </h5>
                     <ul>
-                        <li><a href="#">Sneakers & Athletic</a></li>
-                        <li><a href="#">Athletic Apparel</a></li>
-                        <li><a href="#">Sandals</a></li>
-                        <li><a href="#">Jeans</a></li>
-                        <li><a href="#">Shirts & Tops</a></li>
-                        <li><a href="#">Shorts</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">Clogs & Mules</a></li>
-                        <li><a href="#">Bags & Wallets</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Watches</a></li>
+                        <li><a href="/shop/">Shop All</a></li>
+                        <li><a href="/iphone-cases/">iPhone Cases</a></li>
+                        <li><a href="/samsung-cases/">Samsung Cases</a></li>
+                        <li><a href="/accessories/">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h5 class="title">
+                        Themes
+                    </h5>
+                    <ul>
+                        <li><a href="/shop/">Shop All</a></li>
+                        <li><a href="/glitter-cases/">Glitter</a></li>
+                        <li><a href="/vaporwave-cases/">Vaporwave</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="footer-nav">
                     <h5 class="title">
-                        Account & Shipping Info
+                        Shipping & Order Info
                     </h5>
                     <ul>
-                        <li><a href="#">Your Account</a></li>
-                        <li><a href="#">Shipping Rate & Policies</a></li>
-                        <li><a href="#">Order Tracking</a></li>
-                        <li><a href="#">Taxes & Fees</a></li>
+                        <li><a href="/contact-us/">Your Account</a></li>
+                        <li><a href="/order-tracking/">Order Tracking</a></li>
+                        <li><a href="/shipping-policy/">Shipping Policy</a></li>
+                        <li><a href="/returns-policy/">Returns Policy</a></li>
+                        <li><a href="/faqs/">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav">
@@ -39,10 +42,10 @@
                         About Us
                     </h5>
                     <ul>
-                        <li><a href="#">About Company</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="/contact-us/">About Company</a></li>
+                        <li><a href="/contact-us/">Contact Us</a></li>
+                        <li><a href="/contact-us/">Careers</a></li>
+                        <li><a href="/blog/">News</a></li>
                     </ul>
                 </div>
             </div>

@@ -41,7 +41,7 @@ get_header();
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
                         <h4>Vaporwave Themed Cases</h4>
-                        <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary">Shop Now</a>
+                        <a href="/vaporwave-cases/" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ get_header();
                     <div class="text">
                         <div class="lead">New Collection!</div>
                         <h4>Sparkling Cases</h4>
-                        <a href="/iphone-cases/" class="btn btn-primary">Shop Now</a>
+                        <a href="/glitter-cases/" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ get_header();
                     <p>
                         With multi-layer construction of acrylic material, our cases are 6 ft drop test approved, no joke.
                     </p>
-                    <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary btn-cta btn-lg">Shop iPhone Cases</a>
+                    <a href="/iphone-cases/" class="btn btn-primary btn-cta btn-lg">Shop iPhone Cases</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -123,7 +123,7 @@ get_header();
                         <li class="splide__slide">
                             <div class="slide-inner">
                                 <div class="review-by">
-                                    James Hamilton
+                                    Elisha F.
                                 </div>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -133,9 +133,7 @@ get_header();
                                     <i class="far fa-star"></i>
                                 </div>
                                 <div class="review">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi tenetur ipsum
-                                    animi
-                                    sapiente nobis et
+                                    I got this iPhone 11 case and knew immediately I wanted a vaporwave themed case to go perfectly with it. Femrico had exactly what I needed...
                                 </div>
                                 <div class="date">
                                     2 days ago
@@ -145,48 +143,7 @@ get_header();
                         <li class="splide__slide">
                             <div class="slide-inner">
                                 <div class="review-by">
-                                    William Henry
-                                </div>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="review">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                                </div>
-                                <div class="date">
-                                    3 days ago
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="slide-inner">
-                                <div class="review-by">
-                                    James Parker
-                                </div>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="review">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet consectetur
-                                    adipisicing elit.
-                                </div>
-                                <div class="date">
-                                    3 days ago
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="slide-inner">
-                                <div class="review-by">
-                                    Ryan Gomez
+                                    Hui G.
                                 </div>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -196,9 +153,10 @@ get_header();
                                     <i class="far fa-star"></i>
                                 </div>
                                 <div class="review">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi tenetur ipsum
-                                    animi
-                                    sapiente nobis et
+                                    Satisfied, Case has a very good grip and design is as per photo.
+
+                                    Have used for a month and prints
+                                    did not fade
                                 </div>
                                 <div class="date">
                                     2 days ago
@@ -208,7 +166,7 @@ get_header();
                         <li class="splide__slide">
                             <div class="slide-inner">
                                 <div class="review-by">
-                                    Paul White
+                                    Anisa B.
                                 </div>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -218,7 +176,7 @@ get_header();
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <div class="review">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                                    It is the best case I have ever bought from a case company as it keeps my phone very protected against any falls , it hasn’t left a scratch on the back of my phone , and keeps the front well maintained.
                                 </div>
                                 <div class="date">
                                     3 days ago
@@ -228,7 +186,7 @@ get_header();
                         <li class="splide__slide">
                             <div class="slide-inner">
                                 <div class="review-by">
-                                    Jake Smith
+                                    Abbie R.
                                 </div>
                                 <div class="stars">
                                     <i class="fas fa-star"></i>
@@ -238,8 +196,47 @@ get_header();
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <div class="review">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet consectetur
-                                    adipisicing elit.
+                                    Phone case is great and durable!!!
+                                </div>
+                                <div class="date">
+                                    3 days ago
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="slide-inner">
+                                <div class="review-by">
+                                    Destiny C.
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="review">
+                                    I notoriously dislike cases. They’re usually bulky and not that cute (when it comes to Samsung). This one is a slim but sturdy design that makes me feel my phone has a chance if I drop it. Lol I LOVE the design and I didnt have to compromise the safety for looks. 🙂
+                                </div>
+                                <div class="date">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="slide-inner">
+                                <div class="review-by">
+                                    Kylie
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review">
+                                    I have had this phone case for a while now and it’s truly amazing. I drop my phone a lot and I haven’t broke it once except for a tiny scratch.
                                 </div>
                                 <div class="date">
                                     3 days ago
@@ -253,6 +250,31 @@ get_header();
     </div>
 </section>
 
+
+<section class="mb-5">
+    <div class="container">
+        <div class="row mb-4 mb-lg-0">
+            <div class="col-lg-8">
+                <div class="category-block glitter">
+                    <div class="text">
+                        <div class="lead">New Collection!</div>
+                        <h4>Sparkling Cases</h4>
+                        <a href="/glitter-cases/" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="category-block vaporwave">
+                    <div class="text">
+                        <div class="lead">Hurry up! Limited time offer</div>
+                        <h4>Vaporwave Themed Cases</h4>
+                        <a href="/vaporwave-cases/" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php
