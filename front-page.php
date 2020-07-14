@@ -6,10 +6,10 @@ get_header();
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <a class="carousel-item active" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="/wp-content/uploads/2020/07/banner.jpg">
+                <img src="https://femrico.com/wp-content/uploads/2020/07/banner.jpg" loading="lazy">
             </a>
             <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="/wp-content/uploads/2020/07/banner.jpg">
+                <img src="https://femrico.com/wp-content/uploads/2020/07/banner.jpg" loading="lazy">
             </a>
         </div>
 </section>
@@ -18,15 +18,15 @@ get_header();
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="/iphone-cases/">
-                <img src="/wp-content/uploads/2020/07/iphone.jpg">
+                <img src="https://femrico.com/wp-content/uploads/2020/07/iphone.jpg" loading="lazy">
                 <h5>iPhone Cases</h5>
             </a>
             <a href="/samsung-cases/">
-                <img src="/wp-content/uploads/2020/07/samsung.jpg">
+                <img src="https://femrico.com/wp-content/uploads/2020/07/samsung.jpg" loading="lazy">
                 <h5>Samsung Cases</h5>
             </a>
             <a href="/accessories/">
-                <img src="/wp-content/uploads/2020/07/Mask-Group-2.jpg">
+                <img src="https://femrico.com/wp-content/uploads/2020/07/Mask-Group-2.jpg" loading="lazy">
                 <h5>Accessories</h5>
             </a>
         </div>
@@ -37,19 +37,19 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <div class="category-block">
+                <div class="category-block vaporwave">
                     <div class="text">
                         <div class="lead">Hurry up! Limited time offer</div>
-                        <h4>Take advantage of Free Shipping</h4>
+                        <h4>Vaporwave Themed Cases</h4>
                         <a href="<?= get_permalink(wc_get_page_id('shop')) ?>" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-8">
-                <div class="category-block vaporwave">
+                <div class="category-block glitter">
                     <div class="text">
-                        <div class="lead">Hurry up! Limited time offer</div>
-                        <h4>Vaporwave Themed Cases</h4>
+                        <div class="lead">New Collection!</div>
+                        <h4>Sparkling Cases</h4>
                         <a href="/iphone-cases/" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>

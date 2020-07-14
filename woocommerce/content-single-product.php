@@ -75,7 +75,7 @@ if ( post_password_required() ) {
 						do_action( 'woocommerce_single_product_summary' );
 						?>
 						<div class="secure-payment">
-							<img src="<?= get_template_directory_uri() ?>/assets/images/ssl-secure-icon.png">
+							<img src="<?= get_template_directory_uri() ?>/assets/images/ssl-secure-icon.png" loading="lazy">
 						</div>
 					</div>
 				</div>

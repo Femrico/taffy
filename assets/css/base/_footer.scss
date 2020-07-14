@@ -43,6 +43,31 @@ footer .footer-nav a:hover {
     color: $white;
     text-decoration: none;
 }
+@include media-breakpoint-down(xs) {
+    footer {
+        text-align: center;
+
+        .social .buttons {
+            justify-content: center;
+        }
+
+        .phone .media {
+            justify-content: center;
+        }
+
+        .row > div:nth-child(1) {
+            order: 2;
+        }
+
+        .row > div:nth-child(2) {
+            order: 3;
+        }
+
+        .row > div:nth-child(3) {
+            order: 1;
+        }
+    }
+}
 
 .footer-bottom {
     background: $gray-900;
@@ -98,24 +123,19 @@ footer .footer-nav a:hover {
 }
 
 @include media-breakpoint-down(xs) {
-    footer {
-        text-align: center;
-
-        .social .buttons {
-            justify-content: center;
-        }
-
-        .phone .media {
-            justify-content: center;
-        }
-    }
-
     .footer-bottom {
         text-align: center;
+        padding-top: 1rem !important;
 
         .row:nth-child(1) {
             .media {
-                justify-content: center;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .media i {
+                padding-right: 0 !important;
+                margin-bottom: 10px;
             }
 
             .media-body {

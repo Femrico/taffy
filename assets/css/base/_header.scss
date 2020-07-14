@@ -37,6 +37,13 @@ header .navbar {
     }
 }
 
+@include media-breakpoint-down(xs) {
+    header .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 // Navbar Brand
 .navbar-brand .logo {
     max-width: 130px;

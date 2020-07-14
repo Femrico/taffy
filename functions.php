@@ -78,6 +78,17 @@ function add_menus()
 add_action('init', 'add_menus');
 
 
+/**
+ * Add Default LazyLoading loading="lazy"
+ */
+function taffy_add_default_lazy_loading($attr)
+{
+	$attr['loading'] = "lazy";
+	return $attr;
+}
+add_filter('wp_get_attachment_image_attributes', 'taffy_add_default_lazy_loading', 10, 2);
+
+
 
 /**
  * Woocommerce Functions
