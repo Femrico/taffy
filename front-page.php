@@ -20,11 +20,11 @@ get_header();
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="/iphone-cases/">
-                <img src="/wp-content/uploads/2020/07/iphone-1.jpg" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/iphone-2.jpg" loading="lazy">
                 <h5>iPhone Cases</h5>
             </a>
             <a href="/samsung-cases/">
-                <img src="/wp-content/uploads/2020/07/samsung-1.jpg" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/samsung-2.jpg" loading="lazy">
                 <h5>Samsung Cases</h5>
             </a>
             <a href="/accessories/">
