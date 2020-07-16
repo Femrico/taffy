@@ -66,6 +66,13 @@
         a:nth-child(1) {
             grid-column-start: 1;
             grid-column-end: 3;
+
+            img {
+                height: 250px;
+                object-fit: contain;
+                background: $gray-100;
+                object-position: right;
+            }
         }
 
         img {
