@@ -19,7 +19,7 @@
     }
 
     &.vaporwave {
-        background: url("/wp-content/themes/taffy/assets/images/vaporwave.jpg");
+        background: url("/wp-content/themes/taffy/assets/images/vaporwave.webp");
         background-size: cover;
         background-position: center;
 
@@ -36,7 +36,7 @@
     }
 
     &.glitter {
-        background: url("/wp-content/uploads/2020/07/1.jpg");
+        background: url("/wp-content/themes/taffy/assets/images/glitter.webp");
         background-size: cover;
         background-position: center;
 
@@ -51,6 +51,14 @@
             );
         }
     }
+}
+
+.no-webp .category-block .vaporwave {
+    background: url("/wp-content/themes/taffy/assets/images/vaporwave.jpg");
+}
+
+.no-webp .category-block .glitter {
+    background: url("/wp-content/themes/taffy/assets/images/glitter.jpg");
 }
 
 .testimonial-slider {
