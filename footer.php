@@ -66,11 +66,11 @@
                         Follow Us
                     </h5>
                     <div class="buttons">
-                        <a href="https://www.facebook.com/thefemrico/" target="_blank" rel="nofollow" class="btn btn-social facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" rel="nofollow" class="btn btn-social twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/femrico/" target="_blank" rel="nofollow" class="btn btn-social instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.pinterest.com/femrico/boards/" target="_blank" rel="nofollow" class="btn btn-social pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="https://www.etsy.com/shop/femrico/" target="_blank" rel="nofollow" class="btn btn-social etsy"><i class="fab fa-etsy"></i></a>
+                        <a href="https://www.facebook.com/thefemrico/" target="_blank" rel="nofollow noopener"  class="btn btn-social facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" rel="nofollow noopener"  class="btn btn-social twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/femrico/" target="_blank" rel="nofollow noopener"  class="btn btn-social instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/femrico/boards/" target="_blank" rel="nofollow noopener"  class="btn btn-social pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://www.etsy.com/shop/femrico/" target="_blank" rel="nofollow noopener"  class="btn btn-social etsy"><i class="fab fa-etsy"></i></a>
                         <!-- <a href="#" target="_blank" rel="nofollow" class="btn btn-social youtube"><i class="fab fa-youtube"></i></a> -->
                     </div>
                 </div>
