@@ -133,7 +133,7 @@
         <hr class="hr-light m-0 pb-4 mb-3" />
         <div class="row">
             <div class="col-md-6">
-                <a href="/"><img src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" class="logo mb-4" loading="lazy"></a>
+                <a href="/"><img src="<?= get_template_directory_uri() ?>/assets/images/logo.svg" class="logo mb-4" loading="lazy" alt="Femrico Logo | Shop iPhone Cases and Accessories"></a>
                 <p class="mb-3">&copy; All right reserved. Made with <i class="fas fa-heart"></i> by Femrico.</p>
             </div>
             <div class="col-md-6">

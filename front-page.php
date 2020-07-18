@@ -6,9 +6,9 @@ get_header();
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <a class="carousel-item active" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="/wp-content/uploads/2020/07/banner-2.jpg" class="d-none d-md-block" loading="lazy">
-                <img src="/wp-content/uploads/2020/07/banner-md.jpg" class="d-none d-sm-block d-md-none" loading="lazy">
-                <img src="/wp-content/uploads/2020/07/banner-sm.jpg" class="d-block d-sm-none" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-2.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-md-block" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-md.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-sm-block d-md-none" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-sm.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-block d-sm-none" loading="lazy">
             </a>
             <!-- <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
                 <img src="https://femrico.com/wp-content/uploads/2020/07/banner.jpg" loading="lazy">
@@ -20,15 +20,15 @@ get_header();
     <div class="container">
         <div class="col-xl-8 col-lg-9 shadow-sm overlay-category-wrapper">
             <a href="/iphone-cases/">
-                <img src="/wp-content/uploads/2020/07/iphone-2.jpg" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/iphone-2.jpg" alt="Shop iPhone Cases by Femrico | Glitter phone cases" loading="lazy">
                 <h5>iPhone Cases</h5>
             </a>
             <a href="/samsung-cases/">
-                <img src="/wp-content/uploads/2020/07/samsung-2.jpg" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/samsung-2.jpg" alt="Shop Samsung Phone Cases by Femrico | Galaxy Phone Cases" loading="lazy">
                 <h5>Samsung Cases</h5>
             </a>
             <a href="/accessories/">
-                <img src="/wp-content/uploads/2020/07/Mask-Group-2-1.jpg" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/Mask-Group-2-1.jpg" alt="Shop iPhone Accessories by Femrico | Shop Airpod Accessories" loading="lazy">
                 <h5>Accessories</h5>
             </a>
         </div>
