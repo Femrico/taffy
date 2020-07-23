@@ -176,7 +176,6 @@
         s.parentNode.insertBefore(wa, s);
     })();
 </script>
-<script data-ad-client="ca-pub-3304877389278279" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 
 </html>

@@ -41,8 +41,10 @@ if (productGallery) {
 		flickPower: 500,
 		flickVelocityThreshold: 0.5
 	}).mount();
+
 	var galleryThumbnails = document.querySelectorAll('.gallery-thumbnails a');
 	singleProductSlider.on('move', function (newIndex, oldIndex, destIndex) {
+		destIndex = destIndex % galleryThumbnails.length
 		document.querySelector('.gallery-thumbnails a.active').classList.remove('active');
 		galleryThumbnails[destIndex].classList.add('active');
 	});

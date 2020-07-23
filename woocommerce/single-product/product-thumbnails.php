@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Single Product Thumbnails
  *
@@ -15,10 +16,10 @@
  * @version     3.5.1
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 // Note: `wc_get_gallery_image_html` was added in WC 3.3.2 and did not exist prior. This check protects against theme overrides being used on older versions of WC.
-if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+if (!function_exists('wc_get_gallery_image_html')) {
 	return;
 }
 
@@ -26,24 +27,24 @@ global $product;
 ?>
 
 <div class="gallery-thumbnails">
-<?php
-$iterator = 0;
-$attachment_ids = $product->get_gallery_image_ids();
-if ( $product->get_image_id() ) {
-	$post_thumbnail_id = $product->get_image_id();
-	$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
-	$class = ($iterator == 0) ? 'active' : '';
-	echo '<a href="javascript:void()" onclick="singleProductSlider.go('.$iterator.')" class="'. $class .'">';
-	echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $post_thumbnail_id ), $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
-	echo '</a>';
-	$iterator++;
-}
-foreach ( $attachment_ids as $attachment_id ) {
-	$class = ($iterator == 0) ? 'active' : '';
-	echo '<a href="javascript:void()" onclick="singleProductSlider.go('.$iterator.')" class="'. $class .'">';
-	echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
-	echo '</a>';
-	$iterator++;
-}
-?>
+	<?php
+	$iterator = 0;
+	$attachment_ids = $product->get_gallery_image_ids();
+	if ($product->get_image_id()) {
+		$post_thumbnail_id = $product->get_image_id();
+		$html = wc_get_gallery_image_html($post_thumbnail_id, true);
+		$class = ($iterator == 0) ? 'active' : '';
+		echo '<a href="javascript:void(0)" onclick="singleProductSlider.go(' . $iterator . ')" class="' . $class . '">';
+		echo apply_filters('woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html($post_thumbnail_id), $post_thumbnail_id); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+		echo '</a>';
+		$iterator++;
+	}
+	foreach ($attachment_ids as $attachment_id) {
+		$class = ($iterator == 0) ? 'active' : '';
+		echo '<a href="javascript:void(0)" onclick="singleProductSlider.go(' . $iterator . ')" class="' . $class . '">';
+		echo apply_filters('woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html($attachment_id), $attachment_id); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+		echo '</a>';
+		$iterator++;
+	}
+	?>
 </div>

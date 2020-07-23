@@ -61,8 +61,8 @@ function add_theme_assets()
 	// Scripts
 	wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), '5-22-2020', true);
 	wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', array(), '5-22-2020', true);
-	wp_enqueue_script('splide', get_template_directory_uri() . '/assets/js/splide.js', array(), '5-22-2020', true);
-	wp_enqueue_script('main', get_template_directory_uri() . '/main.js', array(), '5-22-2020', true);
+	wp_enqueue_script('splide', get_template_directory_uri() . '/assets/js/splide.js', array(), '7-22-2020', true);
+	wp_enqueue_script('main', get_template_directory_uri() . '/main.js', array(), '7-22-2020', true);
 }
 add_action('wp_enqueue_scripts', 'add_theme_assets');
 
