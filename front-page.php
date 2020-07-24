@@ -5,14 +5,11 @@ get_header();
 <section class="main-carousel">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <a class="carousel-item active" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="/wp-content/uploads/2020/07/banner-2.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-md-block" loading="lazy">
-                <img src="/wp-content/uploads/2020/07/banner-md.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-sm-block d-md-none" loading="lazy">
+            <a class="carousel-item active" href="/iphone-purple-glitter-case/">
+                <img src="/wp-content/uploads/2020/07/banner-2.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-lg-block" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-md.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-sm-block d-lg-none" loading="lazy">
                 <img src="/wp-content/uploads/2020/07/banner-sm.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-block d-sm-none" loading="lazy">
             </a>
-            <!-- <a class="carousel-item" href="<?= get_permalink(wc_get_page_id('shop')) ?>">
-                <img src="https://femrico.com/wp-content/uploads/2020/07/banner.jpg" loading="lazy">
-            </a> -->
         </div>
 </section>
 

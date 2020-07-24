@@ -1,15 +1,19 @@
 // Main Carousel
 .main-carousel img {
     width: 100%;
-    height: calc(100vh - 87px);
     object-fit: cover;
     object-position: center;
 }
 
 @include media-breakpoint-down(md) {
     .main-carousel img {
+        height: 60vh;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .main-carousel img {
         height: 80vh;
-        // max-height: unset;
     }
 }
 
