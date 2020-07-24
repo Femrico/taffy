@@ -1,0 +1,24 @@
+.back-to-top {
+    position: fixed;
+    background: $primary;
+    bottom: 300px;
+    display: block;
+    color: $white;
+    width: 50px;
+    border-radius: 0;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: -60px;
+    transition: all 0.5s ease;
+
+    &.active {
+        right: 0;
+    }
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}

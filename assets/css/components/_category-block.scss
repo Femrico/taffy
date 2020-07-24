@@ -1,0 +1,79 @@
+.category-block {
+    background: $gray-100;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 100%;
+
+    h4 {
+        margin-bottom: $spacer * 1.5;
+    }
+
+    .text {
+        padding: $spacer * 5 $spacer * 2.5 $spacer * 2;
+        height: 100%;
+    }
+
+    .lead {
+        font-size: $font-size-base;
+        margin-bottom: $spacer * 0.5;
+    }
+
+    &.vaporwave {
+        background: url("/wp-content/themes/taffy/assets/images/vaporwave.webp");
+        background-size: cover;
+        background-position: center;
+
+        .text {
+            background: linear-gradient(
+                60deg,
+                rgb(248, 249, 250),
+                rgba(248, 249, 250, 1) 20%,
+                rgba(248, 249, 250, 0.7) 50%,
+                rgba(0, 0, 0, 0) 85%,
+                rgba(128, 0, 108, 0)
+            );
+        }
+    }
+
+    &.glitter {
+        background: url("/wp-content/themes/taffy/assets/images/glitter.webp");
+        background-size: cover;
+        background-position: center;
+
+        .text {
+            background: linear-gradient(
+                60deg,
+                rgb(248, 249, 250),
+                rgba(248, 249, 250, 1) 15%,
+                rgba(248, 249, 250, 0.7) 50%,
+                rgba(0, 0, 0, 0) 85%,
+                rgba(128, 0, 108, 0)
+            );
+        }
+    }
+
+    &.droptest {
+        background: url("/wp-content/themes/taffy/assets/images/droptest.jpg");
+        background-size: cover;
+        background-position: center;
+
+        .text {
+            background: linear-gradient(
+                60deg,
+                rgb(248, 249, 250),
+                rgba(248, 249, 250, 1) 15%,
+                rgba(248, 249, 250, 0.7) 50%,
+                rgba(0, 0, 0, 0) 85%,
+                rgba(128, 0, 108, 0)
+            );
+        }
+    }
+}
+
+.no-webp .category-block .vaporwave {
+    background: url("/wp-content/themes/taffy/assets/images/vaporwave.jpg");
+}
+
+.no-webp .category-block .glitter {
+    background: url("/wp-content/themes/taffy/assets/images/glitter.jpg");
+}

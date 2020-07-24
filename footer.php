@@ -163,6 +163,11 @@
     </div>
 </div>
 
+                    <a class="back-to-top" href="javascript:void(0)" onclick="javascript:document.documentElement.scrollTop = 0">
+    <i class="far fa-arrow-up"></i>
+    <span>TOP</span>
+</a>
+
 <?php wp_footer(); ?>
 <script type='text/javascript'>
     window.__lo_site_id = 232720;

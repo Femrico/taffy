@@ -96,3 +96,20 @@ window.addEventListener('load', function () {
 })
 
 
+/*** GO TO TOP BUTTON ***/
+window.addEventListener('scroll', function () {
+	var height = window.scrollY;
+
+	if (height >= 600) {
+		document.querySelector(".back-to-top").classList.add("active");
+	} else {
+		if (document.querySelector(".back-to-top").classList.contains("active")) {
+			document.querySelector(".back-to-top").classList.remove("active");
+		}
+	}
+});
+
+function scrollTop() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
