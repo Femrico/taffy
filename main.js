@@ -1,3 +1,4 @@
+/*** TESTIMONIAL SLIDER ***/
 window.addEventListener('load', function () {
 	var testimonialSlider = document.querySelector('.testimonial-slider .splide');
 
@@ -26,6 +27,7 @@ window.addEventListener('load', function () {
 });
 
 
+/*** PRODUCT GALLERY SLIDER ***/
 var productGallery = document.querySelector('.woocommerce-product-gallery .splide');
 if (productGallery) {
 	var singleProductSlider = new Splide(productGallery, {
@@ -44,13 +46,14 @@ if (productGallery) {
 
 	var galleryThumbnails = document.querySelectorAll('.gallery-thumbnails a');
 	singleProductSlider.on('move', function (newIndex, oldIndex, destIndex) {
-		destIndex = destIndex % galleryThumbnails.length
+		destIndex = (destIndex + galleryThumbnails.length) % galleryThumbnails.length
 		document.querySelector('.gallery-thumbnails a.active').classList.remove('active');
 		galleryThumbnails[destIndex].classList.add('active');
 	});
 }
 
 
+/*** PRODUCT UPDATE VARIATION PRICE ***/
 window.addEventListener('load', function () {
 	var variations = document.querySelectorAll('.variations select');
 	if (variations.length > 0) {
@@ -74,6 +77,7 @@ window.addEventListener('load', function () {
 });
 
 
+/*** ADD WebP CLASS on BODY ***/
 function canUseWebP() {
 	var elem = document.createElement('canvas');
 
@@ -90,3 +94,5 @@ window.addEventListener('load', function () {
 		$('body').addClass('no-webp');
 	}
 })
+
+
