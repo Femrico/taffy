@@ -170,9 +170,9 @@ get_header();
                                 <div class="review">
                                     I got this iPhone 11 case and knew immediately I wanted a vaporwave themed case to go perfectly with it. Femrico had exactly what I needed...
                                 </div>
-                                <div class="date">
+                                <!-- <div class="date">
                                     2 days ago
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -193,9 +193,9 @@ get_header();
                                     Have used for a month and prints
                                     did not fade
                                 </div>
-                                <div class="date">
+                                <!-- <div class="date">
                                     2 days ago
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -213,9 +213,9 @@ get_header();
                                 <div class="review">
                                     It is the best case I have ever bought from a case company as it keeps my phone very protected against any falls , it hasn’t left a scratch on the back of my phone , and keeps the front well maintained.
                                 </div>
-                                <div class="date">
+                                <!-- <div class="date">
                                     3 days ago
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -233,9 +233,9 @@ get_header();
                                 <div class="review">
                                     Phone case is great and durable!!!
                                 </div>
-                                <div class="date">
+                                <!-- <div class="date">
                                     3 days ago
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -253,9 +253,9 @@ get_header();
                                 <div class="review">
                                     I notoriously dislike cases. They’re usually bulky and not that cute (when it comes to Samsung). This one is a slim but sturdy design that makes me feel my phone has a chance if I drop it. Lol I LOVE the design and I didnt have to compromise the safety for looks. 🙂
                                 </div>
-                                <div class="date">
+                                <!-- <div class="date">
                                     2 days ago
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -273,9 +273,9 @@ get_header();
                                 <div class="review">
                                     I have had this phone case for a while now and it’s truly amazing. I drop my phone a lot and I haven’t broke it once except for a tiny scratch.
                                 </div>
-                                <div class="date">
+                                <!-- <div class="date">
                                     3 days ago
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                     </ul>
@@ -288,8 +288,8 @@ get_header();
 
 <section class="mb-5">
     <div class="container">
-        <div class="row mb-4 mb-lg-0">
-            <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
                 <div class="category-block glitter">
                     <div class="text">
                         <div class="lead">New Collection!</div>
