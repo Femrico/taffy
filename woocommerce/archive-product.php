@@ -88,10 +88,7 @@ if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_after_shop_loop' );
 ?>
 
-<?php //if (array( 21, 'decor', 'Decor' )) { ?>
-<?php 
-	if (is_product_category('21')) {
-?>
+<?php if (is_product_category('112')) { ?>
 	<section class="mt-5">
 		<div class="container">
 			<div class="category-block droptest">
