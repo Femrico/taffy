@@ -86,6 +86,65 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_pagination - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop' );
+?>
+
+<?php //if (array( 21, 'decor', 'Decor' )) { ?>
+<?php 
+	if (is_product_category('21')) {
+?>
+	<section class="mt-5">
+		<div class="container">
+			<div class="category-block droptest">
+				<div class="text">
+					<div class="lead">&nbsp;</div>
+					<h4>&nbsp;</h4>
+				</div>
+			</div>
+			<div class="col-lg-10 mx-auto mt-5 text-center">
+				<h2 class="mb-4">6ft Drop Test</h2>
+				<p>
+					A dual-layer hard bumper case which is exclusively designed for 
+					your iPhone. With soft shock absorbing outer shell, your phone 
+					will always be protected from scratches, dust and drops. The sparkly 
+					glitter comes sealed in the middle and won’t be leaked or get smuged. 
+					Along with the precise cutouts and raised edges, this makes the case 
+					both beautiful and very protective.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="my-5">
+		<div class="container">
+			<div class="text-center mb-4 pb-2">
+				<h2>Best Sellers</h2>
+			</div>
+			<div class="product-grid mb-5 pb-2">
+				<?php
+				$query = new WP_Query(array(
+					'post_type' => 'product',
+					'post_status' => 'publish',
+					'posts_per_page' => 2,
+					'post__in' => array(9517, 9510),
+					'tax_query' => array(array(
+						'taxonomy' => 'product_visibility',
+						'field'    => 'term_id',
+						'terms'    => 'featured',
+						'operator' => 'IN',
+					))
+				));
+
+				while ($query->have_posts()) {
+					$query->the_post();
+					do_action('woocommerce_shop_loop');
+					wc_get_template_part('content', 'product');
+				}
+				?>
+			</div>
+		</div>
+	</section>
+<?php } ?>
+
+<?php
 } else {
 	/**
 	 * Hook: woocommerce_no_products_found.

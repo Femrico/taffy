@@ -56,17 +56,6 @@
         background: url("/wp-content/themes/taffy/assets/images/droptest.jpg");
         background-size: cover;
         background-position: center;
-
-        .text {
-            background: linear-gradient(
-                60deg,
-                rgb(248, 249, 250),
-                rgba(248, 249, 250, 1) 15%,
-                rgba(248, 249, 250, 0.7) 50%,
-                rgba(0, 0, 0, 0) 85%,
-                rgba(128, 0, 108, 0)
-            );
-        }
     }
 }
 
