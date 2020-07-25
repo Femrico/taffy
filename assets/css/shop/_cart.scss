@@ -25,7 +25,8 @@
     }
 
     .cart_totals {
-        h2, table {
+        h2,
+        table {
             display: none;
         }
     }
@@ -35,4 +36,10 @@
     .woocommerce table.cart td.actions .coupon .input-text {
         width: 48%;
     }
+}
+
+/*** Block Styles ***/
+.wc-block-cart-item__total del .wc-block-formatted-money-amount {
+    text-decoration: line-through;
+    color: $gray-500;
 }
