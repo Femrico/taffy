@@ -59,7 +59,7 @@
                         <input class="form-control email" type="text" placeholder="Your email">
                         <input type="submit" value="Subscribe" class="btn btn-primary">
                     </form>
-                    <p>Subscribe to our newsletter to receive early discount offers, updates and new products info.</p>
+                    <p>Subscribe to our newsletter to receive early discount offers, updates, and new product info.</p>
                 </div>
                 <div class="social">
                     <h5 class="title">
@@ -115,8 +115,8 @@
                 <div class="media">
                     <i class="fal fa-award fa-3x pr-3"></i>
                     <div class="media-body">
-                        <h6>Money back guarantee</h6>
-                        <p>We return money within 30 days</p>
+                        <h6>Money-back guarantee</h6>
+                        <p>We return the money within 30 days</p>
                     </div>
                 </div>
             </div>

@@ -100,11 +100,17 @@
         font-size: $font-size-base;
         font-weight: bold;
 
-        .shipping,
         .strike {
             display: inline;
             color: $gray-500;
             font-size: $font-size-base;
+        }
+
+        .shipping {
+            display: inline;
+            color: $body-color;
+            font-size: $font-size-base;
+            font-weight: 600;
         }
     }
 

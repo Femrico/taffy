@@ -7,7 +7,7 @@ add_filter('woocommerce_format_sale_price', 'taffy_format_sale_price', 10, 3);
 function taffy_format_sale_price($price, $regular_price, $sale_price)
 {
     $price = (is_numeric($sale_price) ? wc_price($sale_price) : $sale_price) . '<span class="strike">' . (is_numeric($regular_price) ? wc_price($regular_price) : $regular_price) . '</span>';
-    $shipping = "<span class='shipping'> - Arrives " . date('D M, jS', mktime(0, 0, 0, date('m'), date('d') + 6, date('Y'))) . "</span>";
+    $shipping = " - <span class='shipping'>Arrives " . date('D, M jS', mktime(0, 0, 0, date('m'), date('d') + 6, date('Y'))) . "</span>";
     if (is_product()) {
         return $price . $shipping;
     } else {
@@ -80,3 +80,22 @@ function taffy_update_store_notice($html, $notice)
     return strip_tags($notice);
 }
 remove_action('wp_footer', 'woocommerce_demo_store');
+
+
+/**
+ * Don't Redirect to Cart on Checkout Page
+ */
+/**
+ * Redirect users after add to cart.
+ */
+add_filter('woocommerce_add_to_cart_redirect', 'taffy_add_to_cart_redirect');
+function taffy_add_to_cart_redirect($url)
+{
+
+    if (is_checkout()) {
+        global $woocommerce;
+        $url = $woocommerce->cart->get_checkout_url();
+    }
+
+    return $url;
+}
