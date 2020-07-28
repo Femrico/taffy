@@ -1,0 +1,22 @@
+.post-content {
+    max-width: 700px;
+
+    h1 {
+        margin-bottom: $spacer;
+    }
+
+    .post-meta {
+        margin-bottom: $spacer * 3;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-image {
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: $spacer * 3;
+    }
+}
