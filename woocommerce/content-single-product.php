@@ -76,7 +76,18 @@ if (post_password_required()) {
 						do_action('woocommerce_single_product_summary');
 						?>
 						<div class="secure-payment">
-							<img src="<?= get_template_directory_uri() ?>/assets/images/ssl-secure-icon.png" loading="lazy">
+							<p>
+								<i class="fas fa-lock-alt"></i>
+								SSL Secured Payments
+							</p>
+							<p>
+								<i class="fas fa-award"></i>
+								30 Days <a href="/returns-policy/">Returns Policy</a>
+							</p>
+							<p>
+								<i class="fas fa-ambulance"></i>
+								<a href="/covid-19-status/">COVID-19</a> Shipments On Track
+							</p>
 						</div>
 					</div>
 				</div>

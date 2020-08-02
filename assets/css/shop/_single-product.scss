@@ -255,8 +255,40 @@
     }
 }
 
-.secure-payment img {
-    max-width: 100px;
+.secure-payment {
+    background: $gray-100;
+    text-align: left;
+    padding: $spacer;
+    font-weight: bold;
+    border-radius: 5px;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        color: $body-color;
+        text-decoration: underline;
+    }
+
+    .fa-lock-alt {
+        color: #008000;
+    }
+
+    .fa-award {
+        color: #FF9800;
+        font-size: 18px;
+    }    
+
+    .fa-ambulance {
+        color: #F44336;
+        font-size: 15px;
+        margin-right: 7px;
+    }
 }
 
 @include media-breakpoint-down(xs) {
