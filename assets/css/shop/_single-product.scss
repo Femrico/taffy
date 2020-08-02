@@ -80,6 +80,7 @@
         .woocommerce-review-link {
             font-size: $font-size-md;
             color: $gray-500;
+            text-decoration: underline;
 
             &:hover {
                 text-decoration: none;
@@ -252,6 +253,52 @@
                 }
             }
         }
+    }
+}
+
+.woocommerce #reviews .reviews-summary {
+    background: $gray-100;
+    margin-bottom: $spacer * 2;
+    padding: $spacer;
+    border-radius: 5px;
+
+    .review-graph {
+        max-width: 350px;
+        display: grid;
+        grid-template-columns: 55px auto 50px;
+        align-items: center;
+    }
+
+    .review-graph:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .graph {
+        margin-right: 15px;
+        margin-left: 10px;
+        background: $gray-200;
+        position: relative;
+        height: 13px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .inner-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        max-width: 100%;
+        background: #fea569;
+        border-radius: 10px;
+    }
+
+    .info {
+        text-align: right;
     }
 }
 

@@ -30,6 +30,54 @@ if ( ! comments_open() ) {
 			Customer Reviews
 		</h2>
 
+		<?php
+			if ( have_comments() ) {
+				$args = array(
+					'status' => 'approve', 
+					'post_type' => 'product',
+					'post_id' => $product->id
+				);
+
+				$stars = [0,0,0,0,0,0];
+				$total_stars = 0;
+
+				foreach( get_comments($args) as $vals ) {
+					$rating = intval( get_comment_meta( $vals->comment_ID, 'rating', true ) );
+					$stars[$rating] += 1;
+					$total_stars++;
+				}
+			}
+		?>
+
+		<div class="reviews-summary">
+			<div class="review-graph">
+				<label>5 Stars</label>
+				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[5] / $total_stars) ?>%"></div></div>
+				<div class="info"><?= round(100 * $stars[5] / $total_stars) ?>%</div>
+			</div>
+			<div class="review-graph">
+				<label>4 Stars</label>
+				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[4] / $total_stars); ?>%"></div></div>
+				<div class="info"><?= round(100 * $stars[4] / $total_stars); ?>%</div>
+			</div>
+			<div class="review-graph">
+				<label>3 Stars</label>
+				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[3] / $total_stars); ?>%"></div></div>
+				<div class="info"><?= round(100 * $stars[3] / $total_stars); ?>%</div>
+			</div>
+			<div class="review-graph">
+				<label>2 Stars</label>
+				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[2] / $total_stars); ?>%"></div></div>
+				<div class="info"><?= round(100 * $stars[2] / $total_stars); ?>%</div>
+			</div>
+			<div class="review-graph">
+				<label>1 Stars</label>
+				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[1] / $total_stars); ?>%"></div></div>
+				<div class="info"><?= round(100 * $stars[1] / $total_stars); ?>%</div>
+			</div>
+		</div>
+
+
 		<?php if ( have_comments() ) : ?>
 			<ol class="commentlist">
 				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
