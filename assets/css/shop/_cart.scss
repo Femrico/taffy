@@ -43,3 +43,18 @@
     text-decoration: line-through;
     color: $gray-500;
 }
+
+.woocommerce-cart {
+
+    .wc-block-cart__submit-container {
+        position: relative !important;
+        margin-top: $spacer * 3;
+        padding: 0 !important;
+        z-index: 0;
+    }
+    
+    .wc-block-components-button:not(.is-link) {
+        @extend .btn-cta;
+        background-color: $primary;
+    }
+}
