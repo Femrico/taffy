@@ -51,6 +51,10 @@
         margin-top: $spacer * 3;
         padding: 0 !important;
         z-index: 0;
+
+        &::before {
+            box-shadow: none;
+        }
     }
     
     .wc-block-components-button:not(.is-link) {
