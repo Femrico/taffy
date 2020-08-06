@@ -6,6 +6,16 @@
 add_filter('woocommerce_format_sale_price', 'taffy_format_sale_price', 10, 3);
 function taffy_format_sale_price($price, $regular_price, $sale_price)
 {
+    // check for admin
+    if (is_admin()) {
+        return $price;
+    }
+
+    // if not cart or checkout page
+    if(!is_front_page() && !is_product_category() && !is_product() && !is_archive()) {
+        return $price;
+    }
+
     $price = (is_numeric($sale_price) ? wc_price($sale_price) : $sale_price) . '<span class="strike">' . (is_numeric($regular_price) ? wc_price($regular_price) : $regular_price) . '</span>';
     $shipping = " - <span class='shipping'>Arrives " . date('D, M jS', mktime(0, 0, 0, date('m'), date('d') + 6, date('Y'))) . "</span>";
     if (is_product()) {
@@ -13,14 +23,26 @@ function taffy_format_sale_price($price, $regular_price, $sale_price)
     } else {
         return $price;
     }
+
 }
 
 add_filter('formatted_woocommerce_price', 'taffy_formatted_price', 10, 5);
 function taffy_formatted_price($formatted_price, $price, $decimal_places, $decimal_separator, $thousand_separator)
 {
+    // check for admin
+    if (is_admin()) {
+        return $formatted_price;
+    }
+
+    // if not cart or checkout page
+    if(!is_front_page() && !is_product_category() && !is_product() && !is_archive()) {
+        return $formatted_price;
+    }
+    
     $unit = number_format(intval($price), 0, $decimal_separator, $thousand_separator);
     $decimal = sprintf('%02d', ($price - intval($price)) * 100);
     return $unit;
+
 }
 
 

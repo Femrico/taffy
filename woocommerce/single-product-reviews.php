@@ -46,34 +46,44 @@ if ( ! comments_open() ) {
 					$stars[$rating] += 1;
 					$total_stars++;
 				}
+
+				$stars_share = [0,0,0,0,0,0];
+				for ($i = 5; $i > 0; $i--) {
+					if ($total_stars == 0) {
+						$stars_share[$i] = 0 . "%";
+						continue;
+					}
+
+					$stars_share[$i] = round(100 * $stars[$i] / $total_stars) . "%";
+				}
 			}
 		?>
 
 		<div class="reviews-summary">
 			<div class="review-graph">
 				<label>5 Stars</label>
-				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[5] / $total_stars) ?>%"></div></div>
-				<div class="info"><?= round(100 * $stars[5] / $total_stars) ?>%</div>
+				<div class="graph"><div class="inner-progress" style="width: <?= $stars_share[5] ?>"></div></div>
+				<div class="info"><?= $stars_share[5] ?></div>
 			</div>
 			<div class="review-graph">
 				<label>4 Stars</label>
-				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[4] / $total_stars); ?>%"></div></div>
-				<div class="info"><?= round(100 * $stars[4] / $total_stars); ?>%</div>
+				<div class="graph"><div class="inner-progress" style="width: <?= $stars_share[4] ?>"></div></div>
+				<div class="info"><?= $stars_share[4] ?></div>
 			</div>
 			<div class="review-graph">
 				<label>3 Stars</label>
-				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[3] / $total_stars); ?>%"></div></div>
-				<div class="info"><?= round(100 * $stars[3] / $total_stars); ?>%</div>
+				<div class="graph"><div class="inner-progress" style="width: <?= $stars_share[3] ?>"></div></div>
+				<div class="info"><?= $stars_share[3] ?></div>
 			</div>
 			<div class="review-graph">
 				<label>2 Stars</label>
-				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[2] / $total_stars); ?>%"></div></div>
-				<div class="info"><?= round(100 * $stars[2] / $total_stars); ?>%</div>
+				<div class="graph"><div class="inner-progress" style="width: <?= $stars_share[2] ?>"></div></div>
+				<div class="info"><?= $stars_share[2] ?></div>
 			</div>
 			<div class="review-graph">
 				<label>1 Stars</label>
-				<div class="graph"><div class="inner-progress" style="width: <?= round(100* $stars[1] / $total_stars); ?>%"></div></div>
-				<div class="info"><?= round(100 * $stars[1] / $total_stars); ?>%</div>
+				<div class="graph"><div class="inner-progress" style="width: <?= $stars_share[1] ?>"></div></div>
+				<div class="info"><?= $stars_share[1] ?></div>
 			</div>
 		</div>
 
