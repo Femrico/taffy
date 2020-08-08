@@ -148,7 +148,7 @@ if (post_password_required()) {
 							experience in the industry who want to give direct access to the best quality products
 							that’s out there - along with unlimited access to our friendly customer support and tech resources.
 						</p>
-						<div class="social">
+						<div class="social dark-bg">
 							<div class="buttons">
 								<a href="https://www.facebook.com/thefemrico/" target="_blank" rel="nofollow noopener" class="btn btn-social facebook"><i class="fab fa-facebook-f"></i></a>
 								<a href="#" target="_blank" rel="nofollow noopener" class="btn btn-social twitter"><i class="fab fa-twitter"></i></a>

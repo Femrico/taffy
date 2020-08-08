@@ -44,3 +44,11 @@
 .btn-social.etsy:hover {
     color: #eb6d20;
 }
+
+.social.dark-bg .btn-social {
+    background: $gray-600;
+
+    &:hover {
+        background: $gray-200;
+    }
+}

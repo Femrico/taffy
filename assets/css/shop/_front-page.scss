@@ -148,13 +148,7 @@
         justify-content: center;
     }
 
-    .btn-social {
-        background: $gray-600;
 
-        &:hover {
-            background: $gray-200;
-        }
-    }
 }
 
 @include media-breakpoint-down(lg) {
