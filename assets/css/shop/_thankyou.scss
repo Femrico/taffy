@@ -1,0 +1,43 @@
+.woocommerce-page .thankyou-page {
+    margin-top: 0;
+    text-align: center;
+    max-width: 500px;
+
+    .celebration-image {
+        margin-bottom: $spacer * 1.5;
+
+        img {
+            max-width: 75px;
+            height: auto;
+            margin: 0;
+            display: inline-block;
+        }
+    }
+
+    h1 {
+        margin-bottom: $spacer * 1.5;
+    }
+
+    .order-number {
+        max-width: 170px;
+        // border: 2px dashed $primary;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: $spacer * 0.75;
+        background-color: $gray-100;
+        margin-bottom: $spacer * 2;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .number {
+            font-weight: bold;
+            font-size: $h3-font-size;
+        }
+
+        .label {
+            font-size: $font-size-sm;
+        }
+    }
+}
