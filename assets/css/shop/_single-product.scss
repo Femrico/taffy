@@ -438,6 +438,7 @@
         color: #333;
         font-weight: bold;
         text-transform: uppercase;
+        text-decoration: none;
         font-size: 18px;
         display: block;
         position: relative;
@@ -449,6 +450,10 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+        }
+
+        & + p {
+            display: none;
         }
     }
 
