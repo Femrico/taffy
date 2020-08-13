@@ -92,9 +92,9 @@ if (post_password_required()) {
 					</div>
 				</div>
 			</div>
-			<div class="row related-products">
-				<?php woocommerce_output_related_products(); ?>
-			</div>
+			<!-- <div class="row related-products">
+				<?php // woocommerce_output_related_products(); ?>
+			</div> -->
 		</div>
 	</div>
 
