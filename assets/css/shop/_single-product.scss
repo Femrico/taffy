@@ -436,9 +436,20 @@
         margin-bottom: $spacer;
     }
 
-    img {
+    h3 img {
         max-height: 36px;
         margin-right: 15px;
+    }
+    
+    &.image {
+        padding: 0;
+    }
+
+    &.image img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
     }
 
     .btn-collapse {
