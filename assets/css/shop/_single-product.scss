@@ -336,6 +336,13 @@
         font-size: 15px;
         margin-right: 7px;
     }
+
+    .fa-dollar-sign {
+        color: #ff9800;
+        font-size: 17px;
+        margin-left: 2px;
+        margin-right: 13px;
+    }
 }
 
 @include media-breakpoint-down(xs) {

@@ -77,12 +77,12 @@ if (post_password_required()) {
 						?>
 						<div class="secure-payment">
 							<p>
-								<i class="fas fa-lock-alt"></i>
-								SSL Secured Payments
+								<i class="fas fa-dollar-sign"></i>
+								Free Shipping
 							</p>
 							<p>
-								<i class="fas fa-award"></i>
-								30 Days <a href="/returns-policy/">Returns Policy</a>
+								<i class="fas fa-lock-alt"></i>
+								SSL Secured Payments
 							</p>
 							<p>
 								<i class="fas fa-ambulance"></i>
