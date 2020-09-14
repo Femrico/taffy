@@ -33,3 +33,7 @@ config.codekit
 
 # Composer
 /vendor
+
+# Custom
+/assets/images/Product Images
+/assets/images/Ads

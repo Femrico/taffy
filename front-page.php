@@ -72,7 +72,8 @@ get_header();
                 </div>
             </div>
             <div class="col-md-6">
-                <video src="<?= get_template_directory_uri() ?>/assets/videos/intro.mp4" muted playsinline autoplay loop></video>
+                <!-- <video src="<?= get_template_directory_uri() ?>/assets/videos/intro.mp4" muted playsinline autoplay loop></video> -->
+                <img src="https://femrico.com/wp-content/uploads/2020/07/71OGUtahCbL._AC_SL1300_-e1594706598662.jpg" class="img-fluid mw-75 rounded">
             </div>
         </div>
     </div>
