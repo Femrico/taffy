@@ -18,6 +18,11 @@ function taffy_format_sale_price($price, $regular_price, $sale_price)
 
     $price = (is_numeric($sale_price) ? wc_price($sale_price) : $sale_price) . '<span class="strike">' . (is_numeric($regular_price) ? wc_price($regular_price) : $regular_price) . '</span>';
     $shipping = " - <span class='shipping'>Arrives " . date('D, M jS', mktime(0, 0, 0, date('m'), date('d') + 6, date('Y'))) . "</span>";
+
+    if (is_product() && get_the_id() == 9886) {
+        $shipping = " - <span class='shipping'>Arrives " . date('D, M jS', mktime(0, 0, 0, date('m'), date('d') + 21, date('Y'))) . "</span>";
+    }
+
     if (is_product()) {
         return $price . $shipping;
     } else {
