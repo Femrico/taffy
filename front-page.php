@@ -5,10 +5,10 @@ get_header();
 <section class="main-carousel">
     <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <a class="carousel-item active" href="/among-us-airpods-case/">
-                <img src="/wp-content/uploads/2020/11/banner.jpg" alt="Shop Among Us AirPods Case | Femrico" class="d-none d-lg-block" loading="lazy">
-                <img src="/wp-content/uploads/2020/11/banner-md.jpg" alt="Silicon AirPods Case | Femrico" class="d-none d-sm-block d-lg-none" loading="lazy">
-                <img src="/wp-content/uploads/2020/11/banner-sm.jpg" alt="Silicon Among Us airpods case | Femrico" class="d-block d-sm-none" loading="lazy">
+            <a class="carousel-item active" href="/iphone-purple-glitter-case/">
+                <img src="/wp-content/uploads/2020/07/banner-2.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-lg-block" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-md.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-none d-sm-block d-lg-none" loading="lazy">
+                <img src="/wp-content/uploads/2020/07/banner-sm.jpg" alt="Shop iPhone Cases by Femrico | Sparkling iPhone Cases" class="d-block d-sm-none" loading="lazy">
             </a>
         </div>
 </section>

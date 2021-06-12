@@ -40,17 +40,9 @@
     .btn.btn-cta {
         @extend .btn-cta;
 
-        opacity: 0;
-        pointer-events: none;
-
         &.added {
             display: none;
         }
-    }
-
-    &:hover .btn {
-        opacity: 1;
-        pointer-events: auto;
     }
 }
 
